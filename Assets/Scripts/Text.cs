@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
 public class Text : MonoBehaviour
 {
-   
+    // Ideal display size of the for each element of the "text" array.
+    [TextArea(5, 50)]
+
+    // Array that stores text.
+    public string[] text;
 
 }

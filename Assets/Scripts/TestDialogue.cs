@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TestDialogue : MonoBehaviour
 {
-    public TextnEvent page;
+    public TextnEvent pages;
 
     public void TestStart()
     {
