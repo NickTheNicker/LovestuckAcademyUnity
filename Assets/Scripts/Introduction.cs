@@ -5,9 +5,9 @@ using UnityEngine;
 public class Introduction : MonoBehaviour
 {
     // Cached References.
-    // The first page.
+    // The first pages.
     GameObject canvas1;
-    // The second page.
+    // The second pages.
     GameObject canvas2;
     // The sceneLoader script.
     SceneLoader sceneLoader;
@@ -19,9 +19,9 @@ public class Introduction : MonoBehaviour
         canvas1 = GameObject.Find("/Canvas1");
         canvas2 = GameObject.Find("/Canvas2");
         sceneLoader = GetComponent<SceneLoader>();
-        // Hides the second page.
+        // Hides the second pages.
         canvas2.gameObject.SetActive(false);
-        // Scene starts on the first page.
+        // Scene starts on the first pages.
         secondPage = false;
     }
 
@@ -29,7 +29,7 @@ public class Introduction : MonoBehaviour
     // Update is called once per frame.
     void Update()
     {
-        // Hides the first page and opens the second page.
+        // Hides the first pages and opens the second pages.
         if (((Input.GetKeyDown(KeyCode.Alpha1)) || (Input.GetKeyDown(KeyCode.Alpha2))) && !secondPage)
         {
             canvas1.gameObject.SetActive(false);

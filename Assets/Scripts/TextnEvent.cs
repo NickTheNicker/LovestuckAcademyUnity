@@ -1,37 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
+[System.Serializable]
 
 public class TextnEvent : MonoBehaviour
 {
-    public Text displayedText;
+    // Cached References.
+    //Text itext;
 
-    // Queue for each "page" of text shown in the "TextBox".
-    public Queue<string> pages;
+    public string []pages;
+
+    //[TextArea(4,50)]
 
     // Start is called before the first frame update.
     void Start()
     {
-        pages = new Queue<string>();
+        
     }
 
-    public void Write()
+    // Update is called once per frame.
+    void Update()
     {
-        Debug.Log("first page");
-        pages.Clear();
-
-        foreach (string text in pages)
-        {
-            pages.Enqueue(text);
-        }
-
-        NextPage();
-    }
-
-    public void NextPage()
-    {
-        string text = pages.Dequeue();
-        displayedText.text = Text.text;
+        
     }
 }

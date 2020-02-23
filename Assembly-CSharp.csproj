@@ -63,8 +63,6 @@
     <Compile Include="Assets\Scripts\Introduction.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
-    <Compile Include="Assets\Scripts\TestDialogue.cs" />
-    <Compile Include="Assets\Scripts\Text.cs" />
     <Compile Include="Assets\Scripts\TextnEvent.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/nicho/Documents/School/DT/LovestuckAcademy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
