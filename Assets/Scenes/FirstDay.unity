@@ -387,20 +387,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed089c46c136c9c47ba6ea9165893056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pages:
-  - 'You are a new student enrolling in Lovestuck Academy. '
-  - "You walk up to the school gates, your heart races, the thoughts repeat in your
-    head\u2026 that feeling\u2026 that pain\u2026 "
-  - '...welling up inside you, it drags you down. '
-  - "You\u2019re lonely\u2026"
-  - You walk through the entrance, toward the elevator, go up to the 44th floor, walk
-    down the hallway looking for a door with the sign 44S and finally you found it.
-  - 'You walk in the class and start looking around, most students look like black
-    shadows with no notable or discerning features. '
-  - 'Before you can fully comprehend the eeriness of the sight, the teacher slams
-    the door and shoves you in front. '
-  - 'Teacher: Introduce yourself to the class in any manner you wish whether that
-    is natural to you or just an act to curry favour is your choice to make.'
+  startingText:
+  - "1) Ice \n2) Water\n3) Fire \n4) Earth"
+  event1Text:
+  - melts
+  event2Text:
+  - is watery
+  event3Text:
+  - is hot
+  event4Text:
+  - is dirty
 --- !u!1 &1126147072
 GameObject:
   m_ObjectHideFlags: 0
