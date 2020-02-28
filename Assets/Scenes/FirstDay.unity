@@ -387,6 +387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed089c46c136c9c47ba6ea9165893056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  choiceTrigger: 0
+  choices: 4
   startingText:
   - "1) Ice \n2) Water\n3) Fire \n4) Earth"
   event1Text:

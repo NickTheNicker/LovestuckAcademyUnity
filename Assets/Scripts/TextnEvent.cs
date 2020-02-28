@@ -26,10 +26,10 @@ public class TextnEvent : MonoBehaviour
     bool chosen = false;
 
     // Starts a choice event when the page number reaches a desired point.
-    int choiceTrigger = 0;
+    [SerializeField] int choiceTrigger = 0;
 
     // The number of choices available.
-    int choices = 2;
+    [SerializeField] int choices = 2;
 
     // Array for pages of starting text that leads up to a choice event. 
     [TextArea(4, 50)]
