@@ -10,6 +10,8 @@ public class TextnEvent : MonoBehaviour
 {
     // Cached References.
     Text iText;
+    GameObject sceneLoader;
+    GameObject save;
 
     // Variables.
     
@@ -31,6 +33,16 @@ public class TextnEvent : MonoBehaviour
     // The number of choices available.
     [SerializeField] int choices = 2;
 
+    // Character you talk to in the scene, 1 = "Shiro" 2 = "Lilith" 3 = "Elora".
+    [SerializeField] int character = 0;
+
+    // Amounts of affection points added for choosing each event.
+    [SerializeField] int affectionChange1 = 0;
+    [SerializeField] int affectionChange2 = 0;
+    [SerializeField] int affectionChange3 = 0;
+    [SerializeField] int affectionChange4 = 0;
+
+
     // Array for pages of starting text that leads up to a choice event. 
     [TextArea(4, 50)]
     public string[] startingText;
@@ -45,13 +57,6 @@ public class TextnEvent : MonoBehaviour
     [TextArea(4, 50)]
     public string[] event4Text;
 
-
-    // Start is called before the first frame update.
-    void Start()
-    {
-        iText = GameObject.Find("TextBoxText").GetComponent<Text>();
-    }
-
     // Displays the next page of text.
     public void NextPage()
     {
@@ -61,18 +66,19 @@ public class TextnEvent : MonoBehaviour
         }  
     }
 
-    // Disables "NextPage()" and gives numbered choices which diverge into separate events.
+    // Gives choices which diverge into separate events.
     public void Choice()
     {
         if ((page == choiceTrigger && !chosen))
         {
-            // Disables "NextPage()".
+            // Temporarily disables "NextPage()".
             choice = true;
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 currentEvent = 1;
                 page = 0;
+                // Enables "NextPage()".
                 chosen = true;
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -93,9 +99,24 @@ public class TextnEvent : MonoBehaviour
                 page = 0;
                 chosen = true;
             }
+        }
+    }
+
+    // Increases or decreases affection points based on event selected;
+    public void AffectionChange()
+    {
+        if (character == 1)
+        {
+            //save sAffection
+        }
+        if (character == 2)
+        {
 
         }
+        if (character == 3)
+        {
 
+        }
     }
 
     // Displays text corresponding to the "page" number for elements in the currently used array.
@@ -105,22 +126,46 @@ public class TextnEvent : MonoBehaviour
         {
             iText.text = startingText[page].ToString();
         }
-        if (currentEvent == 1)
+        // "page <= event1Text.Length" prevents "index was outside of bounds of array" error
+        if ((currentEvent == 1 && page <= event1Text.Length))
         {
             iText.text = event1Text[page].ToString();
         }
-        if (currentEvent == 2)
+        if ((currentEvent == 2 && page <= event2Text.Length))
         {
             iText.text = event2Text[page].ToString();
         }
-        if (currentEvent == 3)
+        if ((currentEvent == 3 && page <= event3Text.Length))
         {
             iText.text = event3Text[page].ToString();
         }
-        if (currentEvent == 4)
+        if ((currentEvent == 4 && page <= event4Text.Length))
         {
             iText.text = event4Text[page].ToString();
         }
+    }
+
+    // Loads next scene after "1" is pressed on the last page of an event array.
+    public void NextScene()
+    {
+        if ((
+            (event1Text.Length == page + 1 && currentEvent == 1) ||
+            (event2Text.Length == page + 1 && currentEvent == 2) ||
+            (event3Text.Length == page + 1 && currentEvent == 3) ||
+            (event4Text.Length == page + 1 && currentEvent == 4)
+           ))
+        {
+
+        }
+    }
+
+
+    // Start is called before the first frame update.
+    void Start()
+    {
+        iText = GameObject.Find("TextBoxText").GetComponent<Text>();
+        sceneLoader = GameObject.Find("SceneLoader");
+        save = GameObject.Find("Save");
     }
 
     // Update is called once per frame.
