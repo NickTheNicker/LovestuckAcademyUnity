@@ -10,8 +10,8 @@ public class TextnEvent : MonoBehaviour
 {
     // Cached References.
     Text iText;
-    GameObject sceneLoader;
-    GameObject save;
+    SceneLoader sceneLoader;
+    Save save;
 
     // Variables.
     
@@ -102,20 +102,65 @@ public class TextnEvent : MonoBehaviour
         }
     }
 
-    // Increases or decreases affection points based on event selected;
+    // Increases or decreases affection points based on the character and event selected;
     public void AffectionChange()
     {
-        if (character == 1)
+       switch (character)
         {
-            //save sAffection
-        }
-        if (character == 2)
-        {
-
-        }
-        if (character == 3)
-        {
-
+            // Shiro
+            case 1:
+switch (currentEvent)
+                {
+                    case 1:
+                        save.sAffection += affectionChange1;
+                        break;
+                    case 2:
+                        save.sAffection += affectionChange2;
+                        break;
+                    case 3:
+                        save.sAffection += affectionChange3;
+                        break;
+                    case 4:
+                        save.sAffection += affectionChange4;
+                        break;
+                }
+                break;
+                // Lilith
+            case 2:
+                switch (currentEvent)
+                {
+                    case 1:
+                        save.lAffection += affectionChange1;
+                        break;
+                    case 2:
+                        save.lAffection += affectionChange2;
+                        break;
+                    case 3:
+                        save.lAffection += affectionChange3;
+                        break;
+                    case 4:
+                        save.lAffection += affectionChange4;
+                        break;
+                }
+                break;
+                // Elora
+            case 3:
+                switch (currentEvent)
+                {
+                    case 1:
+                        save.eAffection += affectionChange1;
+                        break;
+                    case 2:
+                        save.eAffection += affectionChange2;
+                        break;
+                    case 3:
+                        save.eAffection += affectionChange3;
+                        break;
+                    case 4:
+                        save.eAffection += affectionChange4;
+                        break;
+                }
+                break;
         }
     }
 
@@ -164,8 +209,8 @@ public class TextnEvent : MonoBehaviour
     void Start()
     {
         iText = GameObject.Find("TextBoxText").GetComponent<Text>();
-        sceneLoader = GameObject.Find("SceneLoader");
-        save = GameObject.Find("Save");
+        sceneLoader = GameObject.Find("ScriptHolder").GetComponent<SceneLoader>();
+        save = GameObject.Find("ScriptHolder").GetComponent<Save>();
     }
 
     // Update is called once per frame.
