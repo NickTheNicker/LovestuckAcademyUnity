@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using System;
 
 [Serializable]

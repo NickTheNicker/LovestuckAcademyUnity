@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using System;
 
 [Serializable]
@@ -71,7 +69,7 @@ public class TextnEvent : MonoBehaviour
     // Gives choices which diverge into separate events.
     public void Choice()
     {
-        if ((page == choiceTrigger && !chosen))
+        if ((page == (choiceTrigger+1) && !chosen))
         {
             // Temporarily disables "NextPage()".
             choice = true;
