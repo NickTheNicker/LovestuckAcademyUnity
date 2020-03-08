@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System;
 
 [Serializable]
@@ -10,7 +12,7 @@ public class TextnEvent : MonoBehaviour
 {
     // Cached References.
     Text iText;
-    SceneLoader sceneLoader;
+    SavenSceneLoader saveNScene;
     Save save;
 
     // Variables.
@@ -200,17 +202,24 @@ switch (currentEvent)
             (event4Text.Length == page + 1 && currentEvent == 4)
            ))
         {
-
+      
         }
     }
 
+    // Loads the menu scene when the "Esc" key is pressed.
+    public void LoadMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            saveNScene.Menu();
+        }
+    }
 
     // Start is called before the first frame update.
     void Start()
     {
         iText = GameObject.Find("TextBoxText").GetComponent<Text>();
-        sceneLoader = GameObject.Find("ScriptHolder").GetComponent<SceneLoader>();
-        save = GameObject.Find("ScriptHolder").GetComponent<Save>();
+        saveNScene = GameObject.Find("ScriptHolder").GetComponent<SavenSceneLoader>();
     }
 
     // Update is called once per frame.
@@ -219,5 +228,7 @@ switch (currentEvent)
         TextDisplay();
         NextPage();
         Choice();
+        AffectionChange();
+        LoadMenu();
     }
 }

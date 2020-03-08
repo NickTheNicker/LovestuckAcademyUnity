@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Save : MonoBehaviour
+public class Save 
 {
     // Shiro's affection points.
     public int sAffection = 0;
@@ -12,6 +12,8 @@ public class Save : MonoBehaviour
 
     // Elora's affection points.
     public int eAffection = 0;
-    
+
+    // The last scene the player was in.
+    public string lastScene = "Introduction";
 
 }

@@ -10,7 +10,7 @@ public class Introduction : MonoBehaviour
     // The second startingText.
     GameObject canvas2;
     // The sceneLoader script.
-    SceneLoader sceneLoader;
+    SavenSceneLoader sceneLoader;
     bool secondPage;
 
     // Start is called before the first frame update.
@@ -18,7 +18,7 @@ public class Introduction : MonoBehaviour
     {
         canvas1 = GameObject.Find("/Canvas1");
         canvas2 = GameObject.Find("/Canvas2");
-        sceneLoader = GetComponent<SceneLoader>();
+        sceneLoader = GetComponent<SavenSceneLoader>();
         // Hides the second startingText.
         canvas2.gameObject.SetActive(false);
         // Scene starts on the first startingText.
