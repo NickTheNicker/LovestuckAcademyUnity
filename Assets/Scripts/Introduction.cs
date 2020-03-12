@@ -9,8 +9,8 @@ public class Introduction : MonoBehaviour
     GameObject canvas1;
     // The second startingText.
     GameObject canvas2;
-    // The sceneLoader script.
-    SavenSceneLoader sceneLoader;
+    // The saveNScene script.
+    SavenSceneLoader saveNScene;
     bool secondPage;
 
     // Start is called before the first frame update.
@@ -18,7 +18,7 @@ public class Introduction : MonoBehaviour
     {
         canvas1 = GameObject.Find("/Canvas1");
         canvas2 = GameObject.Find("/Canvas2");
-        sceneLoader = GetComponent<SavenSceneLoader>();
+        saveNScene = GetComponent<SavenSceneLoader>();
         // Hides the second startingText.
         canvas2.gameObject.SetActive(false);
         // Scene starts on the first startingText.
@@ -36,10 +36,11 @@ public class Introduction : MonoBehaviour
             canvas2.gameObject.SetActive(true);
             secondPage = true; 
         }
+
         // Loads the "FirstDay" scene
         if (((Input.GetKeyDown(KeyCode.Alpha1)) || (Input.GetKeyDown(KeyCode.Alpha2))) && secondPage)
         {
-            sceneLoader.FirstDay();
+            saveNScene.FirstDay();
         }
     }
 }

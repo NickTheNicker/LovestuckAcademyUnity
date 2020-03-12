@@ -10,7 +10,7 @@ public class TextOnly : MonoBehaviour
 {
     // Cached References.
     Text iText;
-    SavenSceneLoader sceneLoader;
+    SavenSceneLoader saveNScene;
 
     // Variables.
 
@@ -53,7 +53,7 @@ public class TextOnly : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            sceneLoader.Menu();
+            saveNScene.Menu();
         }
     }
 
@@ -61,7 +61,7 @@ public class TextOnly : MonoBehaviour
     void Start()
     {
         iText = GameObject.Find("TextBoxText").GetComponent<Text>();
-        sceneLoader = GameObject.Find("ScriptHolder").GetComponent<SavenSceneLoader>();
+        saveNScene = GameObject.Find("ScriptHolder").GetComponent<SavenSceneLoader>();
     }
 
     // Update is called once per frame.

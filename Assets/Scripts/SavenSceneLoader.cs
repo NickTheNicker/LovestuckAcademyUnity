@@ -10,6 +10,8 @@ public class SavenSceneLoader : MonoBehaviour
     // Cached References.
     Save save;
 
+    public string sceneName;
+
     // Loads the "Menu" scene.
     public void Menu()
     {
@@ -25,6 +27,11 @@ public class SavenSceneLoader : MonoBehaviour
         SceneManager.LoadScene("FirstDay");
     }
 
+    // Loads a specified scene.
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(sceneName);
+    }
     // Closes the program.
     public void Exit()
     {

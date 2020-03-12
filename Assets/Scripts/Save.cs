@@ -16,4 +16,15 @@ public class Save
     // The last scene the player was in.
     public string lastScene = "Introduction";
 
+    // Character Events where false = has not seen and true = has seen.
+
+    // Shiro Event. 
+    public bool sMeet = false;
+
+    // Lilith Events.
+    public bool lMeet = false;
+
+    // Elora Events.
+    public bool eMeet = false;
+
 }
