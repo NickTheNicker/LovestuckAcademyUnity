@@ -23,7 +23,6 @@ public class SavenSceneLoader : MonoBehaviour
     // Loads the "FirstDay" scene.
     public void FirstDay()
     {
-        SaveToFile();
         SceneManager.LoadScene("FirstDay");
     }
 
