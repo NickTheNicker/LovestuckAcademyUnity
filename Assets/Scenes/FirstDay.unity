@@ -587,7 +587,7 @@ MonoBehaviour:
   - 'Teacher: Please introduce yourself to the class in any manner you wish whether
     that is natural to you or just an act to curry favour is your choice to make.'
   - "1)Hey, I\u2019m new here. Nice to meet you all. \r\n2)I\u2019m new that\u2019s
-    all\u2026\r\n3)It\u2019s me! Your girl! Yes! (Strikes pose) \r\n4)\u3053\u3093\u306B\u3061\u306F\u79C1\u306F\u65B0\u4EBA\u3067\u3059\u3002\u3088\u308D\u3057\u304F\u304A\u9858\u3044\u3057\u307E\u3059\u3002\r\n"
+    all\u2026\r\n3)It\u2019s me! Your girl! Yes! (Strikes pose) \r\n4)\u3053\u3093\u306B\u3061\u306F\u308F\u305F\u3057\u306F\u3057\u3093\u3058\u3093\u3067\u3059\u3002\u3088\u308D\u3057\u304F\u304A\u306D\u304E\u3044\u3057\u307E\u3059\u3002"
   event1Text:
   - "Classmate 1: Kind of a generic introduction.\r\nClassmate 2: Vanilla.\r\nClassmate
     3: Could not impress or offend anyone.\r"

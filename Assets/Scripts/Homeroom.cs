@@ -117,7 +117,10 @@ public class Homeroom : MonoBehaviour
     // Displays text corresponding to the "page" number for elements in the currently used array.
     public void TextDisplay()
     {
-        string displayedText = ShiroText() + Environment.NewLine + LilithText() + Environment.NewLine + EloraText() + Environment.NewLine + skip;
+        string displayedText 
+            = ShiroText() + Environment.NewLine 
+            + LilithText() + Environment.NewLine 
+            + EloraText() + Environment.NewLine + skip;
         iText.text = displayedText;
     }
 
