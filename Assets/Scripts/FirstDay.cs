@@ -11,7 +11,7 @@ public class FirstDay : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    Save save;
+    public Save save;
 
     // Variables.
 
@@ -166,5 +166,6 @@ public class FirstDay : MonoBehaviour
         NextPage();
         Choice();
         LoadMenu();
+        NextScene();
     }
 }

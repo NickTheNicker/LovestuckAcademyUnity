@@ -8,9 +8,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class SavenSceneLoader : MonoBehaviour
 {
     // Cached References.
-    Save save;
+    public Save save;
 
     public string sceneName;
+    public bool saveExists;
 
     // Loads the "Menu" scene.
     public void Menu()
@@ -70,24 +71,56 @@ public class SavenSceneLoader : MonoBehaviour
             file = File.Create(Application.persistentDataPath + "Saves.txt");
             Save tempSaves = new Save();
             bF.Serialize(file, tempSaves);
+            file.Close();
+            save = new Save();
+            return;
+
         }
         // Gets the data from the save.
-        save = (Save)bF.Deserialize(file);
+        try
+        {
+            save = (Save)bF.Deserialize(file);
+        }
+        catch
+        {
+            file.Close();
+            ForceDeleteSaves();
+            LoadFromFile();
+            return;
+        }
         file.Close();
+    }
+
+    public void ForceDeleteSaves()
+    {
+        if (File.Exists(Application.persistentDataPath + "Saves.txt"))
+        {
+            File.Delete(Application.persistentDataPath + "Saves.txt");
+        }
     }
     // End of code written by Josh Browne and Aidan Diprose.
 
-    public void DeleteFile()
+    public void CheckSave()
     {
-       // To be done 
+        if (File.Exists(Application.persistentDataPath + "Saves.txt"))
+        {
+            saveExists = true;
+        }
+        else
+        {
+            saveExists = false;
+        }
     }
+
     void Start()
     {
-        // Saves the current scene.
+        // Saves the current scene you are on.
         if (SceneManager.GetActiveScene().name != "Menu")
         {
             save.lastScene = SceneManager.GetActiveScene().name;
         }
+
+        CheckSave();
         LoadFromFile();
     }
 }

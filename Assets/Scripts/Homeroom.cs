@@ -11,7 +11,7 @@ public class Homeroom : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    Save save;
+    public Save save;
 
     string shiro1 = "1)Talk to the person with cat ears.";
     string shiro2 = "1)Talk to Shiro";

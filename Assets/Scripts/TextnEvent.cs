@@ -11,7 +11,7 @@ public class TextnEvent : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    Save save;
+    Save save = new Save();
 
     // Variables.
     
