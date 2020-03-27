@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\SavenSceneLoader.cs" />
     <Compile Include="Assets\Scripts\TextnEvent.cs" />
     <Compile Include="Assets\Scripts\TextOnly.cs" />
+    <Compile Include="Assets\Scripts\UI.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/nicho/Documents/School/DT/LovestuckAcademy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

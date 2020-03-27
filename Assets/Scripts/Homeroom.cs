@@ -15,7 +15,7 @@ public class Homeroom : MonoBehaviour
 
     string shiro1 = "1)Talk to the person with cat ears.";
     string shiro2 = "1)Talk to Shiro";
-    string lilith1 = "2)Talk to the person with tomato sauce on her face.";
+    string lilith1 = "2)Talk to the person with ketchup on her face.";
     string lilith2 = "2)Talk to Lilith";
     string elora1 = "3)Talk to the person with a multi-gem bracelet.";
     string elora2 = "3)Talk to Elora";
@@ -120,7 +120,8 @@ public class Homeroom : MonoBehaviour
         string displayedText 
             = ShiroText() + Environment.NewLine 
             + LilithText() + Environment.NewLine 
-            + EloraText() + Environment.NewLine + skip;
+            + EloraText() + Environment.NewLine 
+            + skip;
         iText.text = displayedText;
     }
 

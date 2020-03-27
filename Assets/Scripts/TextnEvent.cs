@@ -88,28 +88,28 @@ public class TextnEvent : MonoBehaviour
                 currentEvent = 1;
                 page = 0;
                 chosen = true;
-
+                AffectionChange();
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 currentEvent = 2;
                 page = 0;
                 chosen = true;
-                save.lAffection += 2;
+                AffectionChange();
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 currentEvent = 3;
                 page = 0;
                 chosen = true;
-                save.eAffection += 2;
+                AffectionChange();
             }
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 currentEvent = 4;
                 page = 0;
                 chosen = true;
-                save.sAffection += 2;
+                AffectionChange();
             }
         }
     }
@@ -211,7 +211,7 @@ public class TextnEvent : MonoBehaviour
             (event4Text.Length == page + 1) && (currentEvent == 4)
            ))
         {
-      
+            saveNScene.LoadScene();
         }
     }
 
@@ -237,7 +237,6 @@ public class TextnEvent : MonoBehaviour
         TextDisplay();
         NextPage();
         Choice();
-        AffectionChange();
         LoadMenu();
     }
 }

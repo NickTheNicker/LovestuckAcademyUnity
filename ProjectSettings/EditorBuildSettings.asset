@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Homeroom.unity
     guid: 74a0d6639a2678b4eb04460b8dd415b0
   - enabled: 1
-    path: Assets/Scenes/ShiroMeet.unity
+    path: Assets/Scenes/Shiro/ShiroMeet.unity
     guid: 9c676e9abb55c844fa011166a8fe150c
+  - enabled: 1
+    path: Assets/Scenes/Elora/EloraMeet.unity
+    guid: b5e38cd7de162d34fb4fc92dce23e40a
+  - enabled: 1
+    path: Assets/Scenes/Lilith/LilithMeet.unity
+    guid: 5d044b360da87f64fa1c04a25e382ffc
   m_configObjects: {}

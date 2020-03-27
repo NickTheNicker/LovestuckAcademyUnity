@@ -44,6 +44,7 @@ public class Menu : MonoBehaviour
             SceneManager.LoadScene("Introduction");
         }
     }
+
     // Loads save data if any.
     private void Continue()
     {
@@ -52,6 +53,26 @@ public class Menu : MonoBehaviour
             SceneManager.LoadScene(save.lastScene);
         }
     }
+
+    // Opens the lore viewing scene.
+    private void Lore()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene("Lore");
+        }
+    }
+
+    // Opens the affection point display scene.
+    private void Affection()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("Affection");
+        }
+    }
+
+    // Exits the game.
     private void Quit()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -78,10 +99,13 @@ void Start()
        else
         {
             NewGame();
+            Continue();
         }
 
-        Continue();
         Quit();
+        Lore();
+        Affection();
+
     }
 }
 
