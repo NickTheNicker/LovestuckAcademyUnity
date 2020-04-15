@@ -61,7 +61,7 @@ public class Homeroom : MonoBehaviour
     {
         if (!save.sMeet)
         {
-            saveNScene.sceneName = "ShiroMeet";
+            saveNScene.loadName = "ShiroMeet";
         }
         
     }
@@ -71,7 +71,7 @@ public class Homeroom : MonoBehaviour
     {
         if (!save.lMeet)
         {
-            saveNScene.sceneName = "LilithMeet";
+            saveNScene.loadName = "LilithMeet";
         }
         
     }
@@ -81,7 +81,7 @@ public class Homeroom : MonoBehaviour
     {
         if(!save.eMeet)
         {
-            saveNScene.sceneName = "EloraMeet";
+            saveNScene.loadName = "EloraMeet";
         }
         
     }
@@ -109,7 +109,7 @@ public class Homeroom : MonoBehaviour
       
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-            // "sceneName" = Random canteen scene
+            // "loadName" = Random canteen scene
             saveNScene.LoadScene();
             }
     }

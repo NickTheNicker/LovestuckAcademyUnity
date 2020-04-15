@@ -10,7 +10,7 @@ public class SavenSceneLoader : MonoBehaviour
     // Cached References.
     public Save save;
 
-    public string sceneName;
+    public string loadName;
     public bool saveExists;
 
     // Loads the "Menu" scene.
@@ -30,7 +30,7 @@ public class SavenSceneLoader : MonoBehaviour
     // Loads a specified scene.
     public void LoadScene()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(loadName);
     }
     // Closes the program.
     public void Exit()

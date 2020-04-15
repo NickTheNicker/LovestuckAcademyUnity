@@ -22,8 +22,8 @@ public class TextOnly : MonoBehaviour
     // Amounts of affection points added for starting the event.
     [SerializeField] int affectionChange = 0;
 
-    // Page number that corresponds to an element of the "startingText" array.
-    int page = 0;
+    // Page number that corresponds to an element of the "text" array.
+    public int page = 0;
 
     // Array for pages of text.
     [TextArea(4, 50)]
@@ -61,10 +61,10 @@ public class TextOnly : MonoBehaviour
         }
     }
 
-    // Loads next scene after "1" is pressed on the last page
+    // Loads next scene on the last page which requires an extra page to be left blank for arrays.
     public void NextScene()
     {
-        if (text.Length == page + 1)
+        if (text.Length == page)
         {
             saveNScene.LoadScene();
         }
@@ -92,5 +92,7 @@ public class TextOnly : MonoBehaviour
     {
         TextDisplay();
         NextPage();
+        NextScene();
+        LoadMenu();
     }
 }

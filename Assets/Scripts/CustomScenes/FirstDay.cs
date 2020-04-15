@@ -131,14 +131,13 @@ public class FirstDay : MonoBehaviour
     public void NextScene()
     {
         if ((
-            (event1Text.Length == page + 1) && (currentEvent == 1) ||
-            (event2Text.Length == page + 1) && (currentEvent == 2) ||
-            (event3Text.Length == page + 1) && (currentEvent == 3) ||
-            (event4Text.Length == page + 1) && (currentEvent == 4)
+            (event1Text.Length == page) && (currentEvent == 1) ||
+            (event2Text.Length == page) && (currentEvent == 2) ||
+            (event3Text.Length == page) && (currentEvent == 3) ||
+            (event4Text.Length == page) && (currentEvent == 4)
            ))
         {
             // When "Loadscene()" is carried out the scene loaded is "Homeroom".
-            saveNScene.sceneName = "Homeroom";
             saveNScene.LoadScene();
         }
     }

@@ -188,81 +188,160 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320690133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 15, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &649737179
-PrefabInstance:
+--- !u!1 &1585727555
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2134259214339879494, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_Name
-      value: ScriptHolder
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 538
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 302.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1e09c6895136b8249976be135b1d25fe, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585727556}
+  - component: {fileID: 1585727558}
+  - component: {fileID: 1585727557}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1585727556
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585727555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 953069464354005349}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -377.9, y: -200}
+  m_SizeDelta: {x: 40, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1585727557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585727555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 958e7bf8103497d418b7547ca209ff64, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1585727558
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585727555}
+  m_CullTransparentMesh: 0
+--- !u!1 &2031898190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031898191}
+  - component: {fileID: 2031898193}
+  - component: {fileID: 2031898192}
+  m_Layer: 5
+  m_Name: Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2031898191
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031898190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 953069464354005349}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 378.6, y: -200}
+  m_SizeDelta: {x: 40, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2031898192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031898190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 3915aec0015d23e48bf91a4d39cf5180, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &2031898193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031898190}
+  m_CullTransparentMesh: 0
 --- !u!224 &953069464354005349
 RectTransform:
   m_ObjectHideFlags: 0
@@ -277,7 +356,8 @@ RectTransform:
   - {fileID: 8529312453001818066}
   - {fileID: 5278780270060787905}
   - {fileID: 2932517725317673247}
-  - {fileID: 6779911233003729713}
+  - {fileID: 2031898191}
+  - {fileID: 1585727556}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -306,8 +386,135 @@ GameObject:
   - component: {fileID: 1648416078373037312}
   - component: {fileID: 6934967645096342812}
   - component: {fileID: 4240333680341556964}
+  - component: {fileID: 1714204142787533400}
   m_Layer: 5
   m_Name: TextBoxText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1714204142787533400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714204142787533399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c930c32bf385aa4284b42e3e2c14b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - "Almitas\r\nThe city of Almitas is split into 4 rows with each row containing
+    6 sectors which are then further split into 10,000 squares (arranged 100 by 100)
+    with each square being 250m2.\r\nThe address of a location is given by the name
+    of the sector followed by the coordinates of the bottom left and top right squares
+    of its area.\r\nRow 1: Alpha, Beta, Gamma, Delta, Epsilon, Zeta\r\n\r\nRow 2:
+    Eta, Theta, Iota, Kappa, Lambda, Mu\r\n\r\nRow 3: Nu, Xi, Omicron, Pi, Rho, Sigma\r\n\r\nRow
+    4: Tau, Upsilon, Phi, Chi, Psi, Omega\r\n"
+  - "Almitas Academy Ad extract \r\n\u201CAlmitas Academy is the largest and most
+    distinguished school in Almitas, covering 48 squares (10000m2) and being 25 floors
+    high to accommodate all 12000+ students from our kindergarten, preschool, middle
+    school and high school who are all eligible for Almitas University scholarships.
+    \r\nYour child can literally stay in the same education system for a quarter of
+    their lives, never leaving their friends or having to adjust to a new environment
+    surrounded by the most state-of-the-art equipment and facilities that are regularly
+    maintained and annually replaced. We have 3 pools: a diving pool, competition
+    pool and what is basically a mini water park; A court or field exists for every
+    mainstream sport and a few multi-purpose ones for less popular sports; at least
+    one science lab for every floor and a canteen run by Almitas\u2019 finest chefs
+    who are given a generous budget to work with.\r\n"
+  - "Almitas Academy Ad extract\r\nWith too much to give we continue to give you more
+    as our campus was voted \u201CThe most beautiful place in Almitas\u201D with our
+    spotless paths, rich and natural scenery somehow complementing the futuristic
+    architecture and a rooftop view to die for. \r\n\u2026\r\nAlmitas Academy is located
+    in Omicron 046 047 054 053, right in the centre of row 3.\r\n\u2026\r\nSo, what\u2019re
+    you waiting for? Sign your child up now, spaces are limited!\u201D\r\n"
+  - "The Ideal\r\nBy Juliet Verdant in day 1, year 2000.\r\nIt is the beginning of
+    another day, another decade, another century and another millennium. What possibilities
+    could the future hold for this arbitrary concept known as a period of time. \r\nLet
+    us imagine it! Imagine a world of order, one devoid of \u201Cwar\u201D (A game
+    and film term for large scale conflicts), with the people united, happy and working
+    towards a better future for all of humanity. \r\nThe thousands of cultures and
+    languages which originated from formerly isolated groups being narrowed to down
+    to 10 and perhaps, in a few decades, to one.\r\nOne where society is a well-oiled
+    machine with all of its parts in perfect harmony. Everyone knows what is right
+    and wrong with no uncertainties as everything is black and white.\r\n\u2026\r\n"
+  - "The Ideal\r\nA world where everyone knows the love of our God, the sacrifice
+    of his son Jesus Christ and is filled with the spirit. \r\nTruly, we are blessed
+    as this is our reality!\r\n"
+  - "A \u201CNew\u201D Race\r\nBy Professor Bella Richter in day 304, year 1984.\r\nThere
+    used to be races for humans in the past, not the measure of speed kind but a form
+    of categorization for people from different countries. This was at the time where
+    people still had vastly different skin shades and facial features but now its
+    is generally accepted that we are all of one \u201Crace\u201D as everyone looks
+    similar with the only thing distinguishing us from far distances being our (thankfully)
+    large range of hair colours and styles. However, I have discovered a \u201Cnew\u201D
+    race which I\u2019ve decided to coin as \u201CCharaks.\u201D\r\n\u2026"
+  - "A \u201CNew\u201D Race\r\nThese \u201CCharaks\u201D may look similar to everyone
+    else but are actually fundamentally different: they experience emotions more intensely,
+    are more unpredictable, show more than one personality trait and are more likely
+    to cause conflict. I called them a new race for dramatic effect but in reality,
+    they have been by our side from the very beginning.\r\nThere have been quite a
+    few tragedies in history where groups of people were harmed and or killed by the
+    actions of selfish or misguided individuals. \r\n\u2026\r\nThere have also been
+    many heart warming or awe-inspiring stories about individuals who did amazing
+    things that saved hundreds of lives, surpassed every preconceived expectation
+    and or revolutionized the world forever. \r\n...\n"
+  - "A \u201CNew\u201D Race\r\nAfter reading the records, biographies and documentations
+    surrounding those people, I noticed they all shared the qualities listed above.\r\n\u2026\r\n\u2026but
+    further studies are necessary for us to fully understand the who, why and how
+    of this race known as \u201CCharaks.\u201D \r\n..."
+--- !u!4 &2134259214987493762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134259214987493789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 538, y: 302.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2134259214987493788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134259214987493789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1befc17f73071ec41bde54a29cbe48a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  save:
+    sAffection: 0
+    lAffection: 0
+    eAffection: 0
+    lastScene: Introduction
+    sMeet: 0
+    lMeet: 0
+    eMeet: 0
+  loadName: 
+  saveExists: 0
+--- !u!1 &2134259214987493789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2134259214987493762}
+  - component: {fileID: 2134259214987493788}
+  m_Layer: 0
+  m_Name: ScriptHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -329,8 +536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.022549, y: -145.27}
-  m_SizeDelta: {x: 762.64, y: 142.07}
+  m_AnchoredPosition: {x: 0, y: -4.8}
+  m_SizeDelta: {x: 760, y: 373.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4240333680341556964
 MonoBehaviour:
@@ -402,8 +609,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -146}
-  m_SizeDelta: {x: 462, y: 98}
+  m_AnchoredPosition: {x: 0, y: -6}
+  m_SizeDelta: {x: 462, y: 236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5373177470609290817
 GameObject:
@@ -444,7 +651,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a1f55e24e4f47c944aa73b9d6f9ba69c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f690082d40d08084bb07e755767519bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -469,14 +676,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8575350882692476197}
   m_CullTransparentMesh: 0
---- !u!222 &6307642959380504223
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9069065690045294814}
-  m_CullTransparentMesh: 0
 --- !u!114 &6565850178051594163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,25 +693,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!224 &6779911233003729713
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9069065690045294814}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6999998, y: 1.6999998, z: 1}
-  m_Children: []
-  m_Father: {fileID: 953069464354005349}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386.8, y: -215.5}
-  m_SizeDelta: {x: 11, y: 11}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6934967645096342812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +715,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8db3b4eb00a5e434bbc2f3389e286070, type: 3}
-    m_FontSize: 30
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -603,35 +783,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &8247207520864581117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9069065690045294814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8193a571fdfc3444e96db38baddfd923, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!224 &8529312453001818066
 RectTransform:
   m_ObjectHideFlags: 0
@@ -664,24 +815,6 @@ GameObject:
   - component: {fileID: 5560687063178873921}
   m_Layer: 5
   m_Name: TextBoxImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &9069065690045294814
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6779911233003729713}
-  - component: {fileID: 6307642959380504223}
-  - component: {fileID: 8247207520864581117}
-  m_Layer: 5
-  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

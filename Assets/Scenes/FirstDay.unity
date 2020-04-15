@@ -188,11 +188,77 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306412430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -24, z: -10}
+  m_LocalPosition: {x: 0, y: -9.251251, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1237282644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1237282647}
+  - component: {fileID: 1237282646}
+  - component: {fileID: 1237282645}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1237282645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237282644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1237282646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237282644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1237282647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237282644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576487632
 GameObject:
@@ -228,7 +294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -141}
+  m_AnchoredPosition: {x: 0, y: -127.5}
   m_SizeDelta: {x: 462, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576487634
@@ -302,7 +368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386.8, y: -215.5}
+  m_AnchoredPosition: {x: 386.8, y: -202}
   m_SizeDelta: {x: 11, y: 11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1633224962
@@ -342,6 +408,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633224960}
   m_CullTransparentMesh: 0
+--- !u!1 &1805605678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805605681}
+  - component: {fileID: 1805605679}
+  m_Layer: 0
+  m_Name: ScriptHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1805605679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805605678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1befc17f73071ec41bde54a29cbe48a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  save:
+    sAffection: 0
+    lAffection: 0
+    eAffection: 0
+    lastScene: Introduction
+    sMeet: 0
+    lMeet: 0
+    eMeet: 0
+  loadName: Homeroom
+  saveExists: 0
+--- !u!4 &1805605681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805605678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 538, y: 302.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &304089492863214204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,75 +526,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &2134259215840733544
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2134259214339879494, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_Name
-      value: ScriptHolder
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 538
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 302.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1e09c6895136b8249976be135b1d25fe, type: 3}
 --- !u!1 &2194853373911546314
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -357.23, y: 216.57}
+  m_AnchoredPosition: {x: -357.23, y: 210.9}
   m_SizeDelta: {x: 85.55, y: 16.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4173317419221229772
@@ -667,9 +717,13 @@ MonoBehaviour:
     3: Could not impress or offend anyone.\r"
   - 'Teacher: Right, thank you for that introduction, please take a seat at that table
     at the back and everyone is free to do whatever they want until classes start.'
+  - 'Teacher: Right, thank you for that introduction, please take a seat at that table
+    at the back and everyone is free to do whatever they want until classes start.'
   event2Text:
   - "Classmate 1: Short and to the point.\r\nClassmate 2: She doesn\u2019t seem very
     friendly.\r\nClassmate 3: Ok\u2026\r"
+  - 'Teacher: Right, thank you for that introduction, please take a seat at that table
+    at the back and everyone is free to do whatever they want until classes start.'
   - 'Teacher: Right, thank you for that introduction, please take a seat at that table
     at the back and everyone is free to do whatever they want until classes start.'
   event3Text:
@@ -677,8 +731,12 @@ MonoBehaviour:
     3: (Speechless)\r"
   - 'Teacher: Right, thank you for that introduction, please take a seat at that table
     at the back and everyone is free to do whatever they want until classes start.'
+  - 'Teacher: Right, thank you for that introduction, please take a seat at that table
+    at the back and everyone is free to do whatever they want until classes start.'
   event4Text:
   - "Classmate 1: Freaking weaboos.\r\nClassmate 2: Huh?\r\nClassmate 3: Yes!\r"
+  - 'Teacher: Right, thank you for that introduction, please take a seat at that table
+    at the back and everyone is free to do whatever they want until classes start.'
   - 'Teacher: Right, thank you for that introduction, please take a seat at that table
     at the back and everyone is free to do whatever they want until classes start.'
 --- !u!222 &5316107434753691855
@@ -728,6 +786,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.21750203, y: -139.68999}
-  m_SizeDelta: {x: 763.03, y: 140.62}
+  m_AnchoredPosition: {x: 0.79001, y: -126.18999}
+  m_SizeDelta: {x: 761.02, y: 140.6}
   m_Pivot: {x: 0.5, y: 0.5}

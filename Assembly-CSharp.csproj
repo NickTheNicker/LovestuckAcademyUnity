@@ -60,15 +60,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\FirstDay.cs" />
-    <Compile Include="Assets\Scripts\Homeroom.cs" />
-    <Compile Include="Assets\Scripts\Introduction.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\AffectionDisplay.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\Elevator.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\FirstDay.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\Homeroom.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\Introduction.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\Lore.cs" />
+    <Compile Include="Assets\Scripts\ImageSystemChoice.cs" />
+    <Compile Include="Assets\Scripts\ImageSystemText.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Save.cs" />
     <Compile Include="Assets\Scripts\SavenSceneLoader.cs" />
     <Compile Include="Assets\Scripts\TextnEvent.cs" />
     <Compile Include="Assets\Scripts\TextOnly.cs" />
-    <Compile Include="Assets\Scripts\UI.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/nicho/Documents/School/DT/LovestuckAcademy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
