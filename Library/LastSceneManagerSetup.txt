@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Lunch/You.unity
+- path: Assets/Scenes/Shiro/ShiroMeet.unity
   isLoaded: 1
   isActive: 1

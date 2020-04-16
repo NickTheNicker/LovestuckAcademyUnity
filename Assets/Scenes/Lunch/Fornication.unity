@@ -194,75 +194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1553808220
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2134259214339879494, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_Name
-      value: ScriptHolder
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 538
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 302.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2134259214339879513, guid: 1e09c6895136b8249976be135b1d25fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1e09c6895136b8249976be135b1d25fe, type: 3}
 --- !u!224 &673011977912318875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -279,7 +210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.022549, y: -145.27}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 762.64, y: 142.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1962954284868916320
@@ -296,12 +227,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 0
   affectionChange: 0
+  page: 0
   text:
   - "Eli: Can you imagine having sex before marriage?\r\n"
   - "Rin: Eww, no. Who does that?\r\n"
   - "Eli: Like I remember reading online that some people did it a long time ago but
     like how?\r\n"
   - "Rin: I don\u2019t know but sex without the ring doesn\u2019t sound fun at all.\r\n"
+--- !u!4 &2134259215085603077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134259215085603098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 538, y: 302.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2134259215085603098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2134259215085603077}
+  - component: {fileID: 2134259215085603099}
+  m_Layer: 0
+  m_Name: ScriptHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2134259215085603099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134259215085603098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1befc17f73071ec41bde54a29cbe48a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  save:
+    sAffection: 0
+    lAffection: 0
+    eAffection: 0
+    lastScene: Introduction
+    sMeet: 0
+    lMeet: 0
+    eMeet: 0
+  loadName: Elevator
+  saveExists: 0
 --- !u!224 &3232628100529712097
 RectTransform:
   m_ObjectHideFlags: 0
@@ -505,7 +490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -355.72, y: 216.57}
+  m_AnchoredPosition: {x: -355.71997, y: 216.68}
   m_SizeDelta: {x: 88.56, y: 16.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6646937774845223514
@@ -581,7 +566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -146}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 462, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7742881766546816197
@@ -689,6 +674,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386.8, y: -215.5}
+  m_AnchoredPosition: {x: 386.8, y: -200}
   m_SizeDelta: {x: 11, y: 11}
   m_Pivot: {x: 0.5, y: 0.5}

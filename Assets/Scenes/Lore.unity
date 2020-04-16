@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 1585727558}
   - component: {fileID: 1585727557}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,6 @@ GameObject:
   - component: {fileID: 2932517725317673247}
   - component: {fileID: 1648416078373037312}
   - component: {fileID: 6934967645096342812}
-  - component: {fileID: 4240333680341556964}
   - component: {fileID: 1714204142787533400}
   m_Layer: 5
   m_Name: TextBoxText
@@ -501,7 +500,7 @@ MonoBehaviour:
     sMeet: 0
     lMeet: 0
     eMeet: 0
-  loadName: 
+  loadName: Lore
   saveExists: 0
 --- !u!1 &2134259214987493789
 GameObject:
@@ -539,21 +538,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -4.8}
   m_SizeDelta: {x: 760, y: 373.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4240333680341556964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714204142787533399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404e036b36de5f24fa35c716f915294e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: 0
-  affectionChange: 0
-  text: []
 --- !u!1 &4707226674908466181
 GameObject:
   m_ObjectHideFlags: 0

@@ -188,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765490238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 1, y: 20, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -210,7 +210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.022549, y: -145.27}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 762.64, y: 142.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &3343711893694861354
@@ -275,6 +275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed089c46c136c9c47ba6ea9165893056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  page: 0
+  currentEvent: 0
   choices: 2
   character: 3
   affectionChange1: 2
@@ -324,7 +326,6 @@ MonoBehaviour:
   - "(You hear that sparkle sound again)\r\n"
   - "Bye, I need to do something.\r\n"
   - "(Elora walks away, you check out the book and head home.)\r"
-  - "(Elora walks away, you check out the book and head home.)\r"
   event2Text:
   - "Elora: What light?\r\n(She stops picking up the books)\r\n\n(Elora walks away,
     you check out the book and head home.)\r\n"
@@ -350,7 +351,6 @@ MonoBehaviour:
   - "Well, I\u2019m always in the library after school so yeah\u2026\r\n"
   - "(You hear that sparkle sound again)\r\n"
   - "Bye, I need to do something.\r\n"
-  - "(Elora walks away, you check out the book and head home.)\r"
   - "(Elora walks away, you check out the book and head home.)\r"
   event3Text: []
   event4Text: []
@@ -507,7 +507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -355.72, y: 216.57}
+  m_AnchoredPosition: {x: -355.71997, y: 216.68}
   m_SizeDelta: {x: 88.56, y: 16.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6810974055494900113
@@ -655,7 +655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -146}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 462, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7959334491126430990
@@ -744,6 +744,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386.8, y: -215.5}
+  m_AnchoredPosition: {x: 386.8, y: -200}
   m_SizeDelta: {x: 11, y: 11}
   m_Pivot: {x: 0.5, y: 0.5}

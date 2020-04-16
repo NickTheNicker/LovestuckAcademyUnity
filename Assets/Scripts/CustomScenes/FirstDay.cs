@@ -21,9 +21,6 @@ public class FirstDay : MonoBehaviour
     // 0="startingText" 1="event1Text" 2="event2Text" 3="event3Text" 4="event4Text".
     int currentEvent = 0;
 
-    // Bool for when in a multiple choice event.
-    bool choice = false;
-
     // Bool for if a choice has been made in the choice event.
     bool chosen = false;
 

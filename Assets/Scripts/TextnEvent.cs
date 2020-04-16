@@ -16,13 +16,10 @@ public class TextnEvent : MonoBehaviour
     // Variables.
     
     // Page number that corresponds to an element of the "startingText" array.
-    int page = 0;
+    public int page = 0;
 
     // 0="startingText" 1="event1Text" 2="event2Text" 3="event3Text" 4="event4Text".
-    int currentEvent = 0;
-
-    // Bool for when in a multiple choice event.
-    bool choice = false;
+    public int currentEvent = 0;
 
     // Bool for if a choice has been made in the choice event.
     bool chosen = false;
@@ -205,10 +202,10 @@ public class TextnEvent : MonoBehaviour
     public void NextScene()
     {
         if ((
-            (event1Text.Length == page + 1) && (currentEvent == 1) ||
-            (event2Text.Length == page + 1) && (currentEvent == 2) ||
-            (event3Text.Length == page + 1) && (currentEvent == 3) ||
-            (event4Text.Length == page + 1) && (currentEvent == 4)
+            (event1Text.Length == page) && (currentEvent == 1) ||
+            (event2Text.Length == page) && (currentEvent == 2) ||
+            (event3Text.Length == page) && (currentEvent == 3) ||
+            (event4Text.Length == page) && (currentEvent == 4)
            ))
         {
             saveNScene.LoadScene();
@@ -237,6 +234,7 @@ public class TextnEvent : MonoBehaviour
         TextDisplay();
         NextPage();
         Choice();
+        NextScene();
         LoadMenu();
     }
 }

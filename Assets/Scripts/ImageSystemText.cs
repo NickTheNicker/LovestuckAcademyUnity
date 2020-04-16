@@ -28,20 +28,21 @@ public class ImageSystemText : MonoBehaviour
     [SerializeField] int b2 = -1;
     [SerializeField] int b3 = -2;
 
+    [SerializeField] int g1 = 0;
     [SerializeField] int g2 = -1;
     [SerializeField] int g3 = -2;
     [SerializeField] int g4 = -3;
     [SerializeField] int g5 = -4;
     [SerializeField] int g6 = -5;
 
-    // Hides all images except "back1" and "gir1".
+    // Hides all images except "back1".
     public void StartImages()
     {
         back1.enabled = true;
         back2.enabled = false;
         back3.enabled = false;
 
-        girl1.enabled = true;
+        girl1.enabled = false;
         girl2.enabled = false;
         girl3.enabled = false;
         girl3.enabled = false;
@@ -69,6 +70,10 @@ public class ImageSystemText : MonoBehaviour
     // Changes the girl image accroding to the "page" int.
     public void GirlChange()
     {
+        if (page == g1)
+        {
+            girl1.enabled = true;
+        }
         if (page == g2)
         {
             girl1.enabled = false;
@@ -108,6 +113,7 @@ public class ImageSystemText : MonoBehaviour
     // Update is called once per frame.
     void Update()
     {
+        // Copies the int value from the "TextOnly" script.
         page = textOnly.page;
              
         BackChange();

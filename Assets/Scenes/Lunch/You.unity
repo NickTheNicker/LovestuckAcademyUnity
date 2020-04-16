@@ -451,6 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   b2: -1
   b3: -2
+  g1: 0
   g2: -1
   g3: -2
   g4: -3
@@ -731,7 +732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -133.3707}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 762.64, y: 142.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4601838194008180702
@@ -748,6 +749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 0
   affectionChange: 0
+  page: 0
   text:
   - "Eli: You don\u2019t talk much do you?\r\n"
   - "Rin: Yeah, I rarely ever hear you in class.\r\n"
@@ -845,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -133}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 462, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5734469910801723259
@@ -907,7 +909,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386.8, y: -203.60068}
+  m_AnchoredPosition: {x: 386.8, y: -200}
   m_SizeDelta: {x: 11, y: 11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6781057110709866121
@@ -1051,7 +1053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -355.72, y: 210.9}
+  m_AnchoredPosition: {x: -355.71997, y: 216.68}
   m_SizeDelta: {x: 88.56, y: 16.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8608144685398813895
