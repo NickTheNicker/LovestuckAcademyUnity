@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Shiro/ShiroMeet.unity
+- path: Assets/Scenes/Affection.unity
   isLoaded: 1
   isActive: 1

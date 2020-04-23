@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+
 
 [Serializable]
 
@@ -20,6 +21,11 @@ public class Homeroom : MonoBehaviour
     string elora1 = "3)Talk to the person with a multi-gem bracelet.";
     string elora2 = "3)Talk to Elora";
     string skip = "4)Keep to yourself";
+
+    // Variables.
+
+    // Determines which character mood scene is loaded: 1=sad 2=normal 3=happy.
+    int mood;
 
     // Methods that change text based on bools in "Save".
     private string ShiroText()
@@ -63,7 +69,18 @@ public class Homeroom : MonoBehaviour
         {
             saveNScene.loadName = "ShiroMeet";
         }
-        
+        else switch (mood)
+            {
+                case 1:
+                    saveNScene.loadName = "ShiroSad";
+                    break;
+                case 2:
+                    saveNScene.loadName = "ShiroNormal";
+                    break;
+                case 3:
+                    saveNScene.loadName = "ShiroHappy";
+                    break;
+            }
     }
 
     // Selects Lilith Homeroom scenes.
@@ -73,7 +90,18 @@ public class Homeroom : MonoBehaviour
         {
             saveNScene.loadName = "LilithMeet";
         }
-        
+        else switch (mood)
+            {
+                case 1:
+                    saveNScene.loadName = "LilithSad";
+                    break;
+                case 2:
+                    saveNScene.loadName = "LilithNormal";
+                    break;
+                case 3:
+                    saveNScene.loadName = "LilithHappy";
+                    break;
+            }
     }
 
     // Selects Elora Homeroom scenes.
@@ -83,7 +111,19 @@ public class Homeroom : MonoBehaviour
         {
             saveNScene.loadName = "EloraMeet";
         }
-        
+        else switch (mood)
+            {
+                case 1:
+                    saveNScene.loadName = "EloraSad";
+                    break;
+                case 2:
+                    saveNScene.loadName = "EloraNormal";
+                    break;
+                case 3:
+                    saveNScene.loadName = "EloraHappy";
+                    break;
+            }
+
     }
 
     // Gives choices which diverge into separate events.
@@ -139,6 +179,9 @@ public class Homeroom : MonoBehaviour
     {
         iText = GameObject.Find("TextBoxText").GetComponent<Text>();
         saveNScene = GameObject.Find("ScriptHolder").GetComponent<SavenSceneLoader>();
+
+        // Sets mood as a interger number between 1(including) and 5(excluding).
+        mood = UnityEngine.Random.Range(1, 5);
     }
 
     // Update is called once per frame.
