@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ImageSystemText : MonoBehaviour
 {
     // Cached References.
+    GameObject textDisplay;
+    GameObject textBoxText;
     TextOnly textOnly;
 
     // Background images.
@@ -25,6 +27,7 @@ public class ImageSystemText : MonoBehaviour
     int page = 0;
 
     // Page numbers for when the "b"ackground or "g"irl image changes.
+    [SerializeField] int b1 = 0;
     [SerializeField] int b2 = -1;
     [SerializeField] int b3 = -2;
 
@@ -35,10 +38,10 @@ public class ImageSystemText : MonoBehaviour
     [SerializeField] int g5 = -4;
     [SerializeField] int g6 = -5;
 
-    // Hides all images except "back1".
+    // Hides all images.
     public void StartImages()
     {
-        back1.enabled = true;
+        back1.enabled = false;
         back2.enabled = false;
         back3.enabled = false;
 
@@ -54,6 +57,10 @@ public class ImageSystemText : MonoBehaviour
     // Changes the background image accroding to the "page" int.
     public void BackChange()
     {
+        if (page == b1)
+        {
+            back1.enabled = true;
+        }
         if (page == b2)
         {
             back1.enabled = false;
@@ -105,9 +112,22 @@ public class ImageSystemText : MonoBehaviour
     // Start is called before the first frame update.
     void Start()
     {
+        // Image references.
+        back1 = GameObject.Find("Back1").GetComponent<Image>();
+        back2 = GameObject.Find("Back2").GetComponent<Image>();
+        back3 = GameObject.Find("Back3").GetComponent<Image>();
+        girl1 = GameObject.Find("Girl1").GetComponent<Image>();
+        girl2 = GameObject.Find("Girl2").GetComponent<Image>();
+        girl3 = GameObject.Find("Girl3").GetComponent<Image>();
+        girl4 = GameObject.Find("Girl4").GetComponent<Image>();
+        girl5 = GameObject.Find("Girl5").GetComponent<Image>();
+        girl6 = GameObject.Find("Girl6").GetComponent<Image>();
+
         StartImages();
-  
-        textOnly = GameObject.Find("TextBoxText").GetComponent<TextOnly>();
+
+        textDisplay = GameObject.Find("Text Display");
+        textBoxText = textDisplay.transform.Find("TextBoxText").gameObject;
+        textOnly = textBoxText.GetComponent<TextOnly>();
     }
 
     // Update is called once per frame.
@@ -115,6 +135,7 @@ public class ImageSystemText : MonoBehaviour
     {
         // Copies the int value from the "TextOnly" script.
         page = textOnly.page;
+        Debug.Log(page);
              
         BackChange();
         GirlChange();

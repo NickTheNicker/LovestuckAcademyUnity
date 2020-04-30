@@ -148,7 +148,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -428,11 +428,15 @@ MonoBehaviour:
   - (You try to make small talk but she seems lost in thought and cannot respond properly.)
   - (The bell rings and she leaves without even looking at you.)
   event2Text:
-  - "(She talks about very heavy topics in a vague and uncharacteristic way but somehow
-    natural to her current personality.)\r\n"
-  - "(The light in her eyes seems to flicker as she stares into your eyes, staring
-    at an infinite darkness behind you, beyond you... Her unflinching eye contact
-    is unnerving.)\r\n"
+  - "(Elora stares through your eyes with unflinching eye contact, her sight piecing
+    through the darkness of your pupils to the infinite darkness of the world behind
+    you, beyond you\u2026)\r\n"
+  - "(The faint light in her eyes seems to flicker like flames and the closer you
+    look at it, the more vivid the scene becomes: the world burning, chaos and destruction
+    incarnate. Death and despair thick in the air, the sharp bitter taste raging in
+    your mouth, the choking and scalding of your lungs.)\r\n"
+  - "(She starts talking about very heavy topics in a vague and uncharacteristic way.
+    You wish she were just pretending but\u2026)\r\n"
   - "Bye and sorry, I\u2019m just going through my usual\u2026 phases?\r\n"
   event3Text:
   - "(She looks at you with a pained expression, hesitates to say something and changes

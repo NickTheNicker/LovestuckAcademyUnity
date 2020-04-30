@@ -94,14 +94,14 @@ public class TextnEvent : MonoBehaviour
                 chosen = true;
                 AffectionChange();
             }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if ((Input.GetKeyDown(KeyCode.Alpha3)) && (choices >= 3))
             {
                 currentEvent = 3;
                 page = 0;
                 chosen = true;
                 AffectionChange();
             }
-            if (Input.GetKeyDown(KeyCode.Alpha4))
+            if ((Input.GetKeyDown(KeyCode.Alpha4)) && (choices == 4))
             {
                 currentEvent = 4;
                 page = 0;
