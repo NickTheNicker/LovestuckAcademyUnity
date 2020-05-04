@@ -135,8 +135,6 @@ public class ImageSystemText : MonoBehaviour
     {
         // Copies the int value from the "TextOnly" script.
         page = textOnly.page;
-        Debug.Log(page);
-             
         BackChange();
         GirlChange();
     }

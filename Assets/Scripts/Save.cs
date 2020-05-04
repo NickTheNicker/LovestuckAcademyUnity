@@ -17,6 +17,9 @@ public class Save
     // The last scene the player was in.
     public string lastScene = "Introduction";
 
+    // Tracks progress through lunch events.
+    public int lunchCount = 0;
+
     // Character Events where false = has not seen and true = has seen.
 
     // Shiro Event. 

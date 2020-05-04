@@ -19,7 +19,7 @@ public class TextOnly : MonoBehaviour
     // Character you talk to in the scene, 1 = "Shiro" 2 = "Lilith" 3 = "Elora".
     [SerializeField] int character = 0;
 
-    // Amounts of affection points added for starting the event.
+    // Amounts of affection points rewarded to a character for finishing the event,
     [SerializeField] int affectionChange = 0;
 
     // Page number that corresponds to an element of the "text" array.
@@ -61,11 +61,12 @@ public class TextOnly : MonoBehaviour
         }
     }
 
-    // Loads next scene on the last page which requires an extra page to be left blank for arrays.
+    // Loads next scene on the last page and adds affection points.
     public void NextScene()
     {
         if (text.Length == page)
         {
+            AffectionChange();
             saveNScene.LoadScene();
         }
     }
@@ -84,7 +85,6 @@ public class TextOnly : MonoBehaviour
     {
         iText = GameObject.Find("TextBoxText").GetComponent<Text>();
         saveNScene = GameObject.Find("ScriptHolder").GetComponent<SavenSceneLoader>();
-        AffectionChange();
     }
 
     // Update is called once per frame.

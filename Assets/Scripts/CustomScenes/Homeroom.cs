@@ -62,7 +62,7 @@ public class Homeroom : MonoBehaviour
         }
     }
 
-    // Selects Shiro Homeroom scenes.
+    // Selects Shiro Homeroom scenes based on "mood".
     public void Shiro()
     {
         if (!save.sMeet)
@@ -78,12 +78,15 @@ public class Homeroom : MonoBehaviour
                     saveNScene.loadName = "ShiroNormal";
                     break;
                 case 3:
+                    saveNScene.loadName = "ShiroNormal";
+                    break;
+                case 4:
                     saveNScene.loadName = "ShiroHappy";
                     break;
             }
     }
 
-    // Selects Lilith Homeroom scenes.
+    // Selects Lilith Homeroom scenes based on "mood".
     public void Lilith()
     {
         if (!save.lMeet)
@@ -99,12 +102,15 @@ public class Homeroom : MonoBehaviour
                     saveNScene.loadName = "LilithNormal";
                     break;
                 case 3:
+                    saveNScene.loadName = "LilithNormal";
+                    break;
+                case 4:
                     saveNScene.loadName = "LilithHappy";
                     break;
             }
     }
 
-    // Selects Elora Homeroom scenes.
+    // Selects Elora Homeroom scenes based on "mood".
     public void Elora()
     {
         if(!save.eMeet)
@@ -120,6 +126,9 @@ public class Homeroom : MonoBehaviour
                     saveNScene.loadName = "EloraNormal";
                     break;
                 case 3:
+                    saveNScene.loadName = "EloraNormal";
+                    break;
+                case 4:
                     saveNScene.loadName = "EloraHappy";
                     break;
             }

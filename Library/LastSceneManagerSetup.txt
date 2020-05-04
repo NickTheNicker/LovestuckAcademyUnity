@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Lunch/The Prodigy.unity
+- path: Assets/Scenes/Shiro/ShiroHappy.unity
   isLoaded: 1
   isActive: 1

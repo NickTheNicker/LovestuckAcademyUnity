@@ -16,10 +16,10 @@ public class FirstDay : MonoBehaviour
     // Variables.
 
     // Page number that corresponds to an element of the "startingText" array.
-    int page = 0;
+    public int page = 0;
 
     // 0="startingText" 1="event1Text" 2="event2Text" 3="event3Text" 4="event4Text".
-    int currentEvent = 0;
+    public int currentEvent = 0;
 
     // Bool for if a choice has been made in the choice event.
     bool chosen = false;

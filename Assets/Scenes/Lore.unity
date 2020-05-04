@@ -406,66 +406,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - "Almitas\r\nThe city of Almitas is split into 4 rows with each row containing
+  - "Reproduction\r\nUnlike most mammals, humans are hermaphrodites who have both
+    male and female reproductive organs. \r\nIt is possible to impregnate oneself
+    but difficult with the hormones released only corresponding to the organ that
+    was stimulated to produce orgasm. \r\nThe person who becomes pregnant with the
+    first child in a family is referred to as the mother and the other as the father.
+    Likewise, female animals are also referred to as mothers and males as fathers.\r\n"
+  - "Beasts\r\n\u201CBeast\u201D is the colloquial term for spontaneously occurring
+    organisms that was first discovered in 1763 when a horde of them attacked the
+    city of London. \r\nEven after centuries of research, we still have no idea where
+    they come from. Every species of beasts discovered are only hostile towards humans
+    and appear to have been increasing in size over the centuries. The average beast,
+    in 1770, weighed 70 kg and measured 1.5m from head to tail but today they weigh
+    400kg and measure 4m.\r\nBeasts take a wide variety of forms, from colossal winged
+    demons, to twisted humanoid nightmares, to transient beings that seem to distort
+    reality. \r\nWe can only place our faith in those on the frontlines.\r\n"
+  - "Almitas \r\nThe city of Almitas is split into 4 rows with each row containing
     6 sectors which are then further split into 10,000 squares (arranged 100 by 100)
-    with each square being 250m2.\r\nThe address of a location is given by the name
+    with each square being 250m2. \r\nThe address of a location is given by the name
     of the sector followed by the coordinates of the bottom left and top right squares
-    of its area.\r\nRow 1: Alpha, Beta, Gamma, Delta, Epsilon, Zeta\r\n\r\nRow 2:
-    Eta, Theta, Iota, Kappa, Lambda, Mu\r\n\r\nRow 3: Nu, Xi, Omicron, Pi, Rho, Sigma\r\n\r\nRow
-    4: Tau, Upsilon, Phi, Chi, Psi, Omega\r\n"
+    of its area. \r\nRow 1: Alpha, Beta, Gamma, Delta, Epsilon, Zeta \r\n \r\nRow
+    2: Eta, Theta, Iota, Kappa, Lambda, Mu \r\n \r\nRow 3: Nu, Xi, Omicron, Pi, Rho,
+    Sigma \r\n \r\nRow 4: Tau, Upsilon, Phi, Chi, Psi, Omega \r\n \r\n"
   - "Almitas Academy Ad extract \r\n\u201CAlmitas Academy is the largest and most
     distinguished school in Almitas, covering 48 squares (10000m2) and being 25 floors
     high to accommodate all 12000+ students from our kindergarten, preschool, middle
     school and high school who are all eligible for Almitas University scholarships.
-    \r\nYour child can literally stay in the same education system for a quarter of
-    their lives, never leaving their friends or having to adjust to a new environment
+    \ \r\nYour child can literally stay in the same education system for a quarter
+    of their lives, never leaving their friends or having to adjust to a new environment
     surrounded by the most state-of-the-art equipment and facilities that are regularly
     maintained and annually replaced. We have 3 pools: a diving pool, competition
     pool and what is basically a mini water park; A court or field exists for every
     mainstream sport and a few multi-purpose ones for less popular sports; at least
     one science lab for every floor and a canteen run by Almitas\u2019 finest chefs
-    who are given a generous budget to work with.\r\n"
-  - "Almitas Academy Ad extract\r\nWith too much to give we continue to give you more
-    as our campus was voted \u201CThe most beautiful place in Almitas\u201D with our
-    spotless paths, rich and natural scenery somehow complementing the futuristic
-    architecture and a rooftop view to die for. \r\n\u2026\r\nAlmitas Academy is located
-    in Omicron 046 047 054 053, right in the centre of row 3.\r\n\u2026\r\nSo, what\u2019re
-    you waiting for? Sign your child up now, spaces are limited!\u201D\r\n"
-  - "The Ideal\r\nBy Juliet Verdant in day 1, year 2000.\r\nIt is the beginning of
-    another day, another decade, another century and another millennium. What possibilities
-    could the future hold for this arbitrary concept known as a period of time. \r\nLet
+    who are given a generous budget to work with. \r\n"
+  - "Almitas Academy Ad extract \r\nWith too much to give we continue to give you
+    more as our campus was voted \u201CThe most beautiful place in Almitas\u201D with
+    our spotless paths, rich and natural scenery somehow complementing the futuristic
+    architecture and a rooftop view to die for.  \r\n\u2026 \r\nAlmitas Academy is
+    located in Omicron 046 047 054 053, right in the centre of row 3. \r\n\u2026 \r\nSo,
+    what\u2019re you waiting for? Sign your child up now, spaces are limited!\u201D
+    \r\n \r\n"
+  - "The Ideal \r\nBy Juliet Verdant in day 1, year 2000. \r\nIt is the beginning
+    of another day, another decade, another century and another millennium. What possibilities
+    could the future hold for this arbitrary concept known as a period of time.  \r\nLet
     us imagine it! Imagine a world of order, one devoid of \u201Cwar\u201D (A game
     and film term for large scale conflicts), with the people united, happy and working
-    towards a better future for all of humanity. \r\nThe thousands of cultures and
+    towards a better future for all of humanity.  \r\nThe thousands of cultures and
     languages which originated from formerly isolated groups being narrowed to down
-    to 10 and perhaps, in a few decades, to one.\r\nOne where society is a well-oiled
+    to 10 and perhaps, in a few decades, to one. \r\nOne where society is a well-oiled
     machine with all of its parts in perfect harmony. Everyone knows what is right
-    and wrong with no uncertainties as everything is black and white.\r\n\u2026\r\n"
-  - "The Ideal\r\nA world where everyone knows the love of our God, the sacrifice
-    of his son Jesus Christ and is filled with the spirit. \r\nTruly, we are blessed
-    as this is our reality!\r\n"
-  - "A \u201CNew\u201D Race\r\nBy Professor Bella Richter in day 304, year 1984.\r\nThere
-    used to be races for humans in the past, not the measure of speed kind but a form
-    of categorization for people from different countries. This was at the time where
-    people still had vastly different skin shades and facial features but now its
-    is generally accepted that we are all of one \u201Crace\u201D as everyone looks
-    similar with the only thing distinguishing us from far distances being our (thankfully)
-    large range of hair colours and styles. However, I have discovered a \u201Cnew\u201D
-    race which I\u2019ve decided to coin as \u201CCharaks.\u201D\r\n\u2026"
-  - "A \u201CNew\u201D Race\r\nThese \u201CCharaks\u201D may look similar to everyone
+    and wrong with no uncertainties as everything is black and white. \r\n\u2026 \r\n"
+  - "The Ideal \r\nA world where everyone knows the love of our God, the sacrifice
+    of his son Jesus Christ and is filled with the spirit.  \r\nTruly, we are blessed
+    as this is our reality! \r\n"
+  - "A \u201CNew\u201D Race \r\nBy Professor Bella Richter in day 304, year 1984.
+    \r\nThere used to be races for humans in the past, not the measure of speed kind
+    but a form of categorization for people from different countries. This was at
+    the time where people still had vastly different skin shades and facial features
+    but now its is generally accepted that we are all of one \u201Crace\u201D as everyone
+    looks similar with the only thing distinguishing us from far distances being our
+    (thankfully) large range of hair colours and styles. However, I have discovered
+    a \u201Cnew\u201D race which I\u2019ve decided to coin as \u201CCharaks.\u201D
+    \r\n\u2026 \r\n"
+  - "A \u201CNew\u201D Race \r\nThese \u201CCharaks\u201D may look similar to everyone
     else but are actually fundamentally different: they experience emotions more intensely,
     are more unpredictable, show more than one personality trait and are more likely
     to cause conflict. I called them a new race for dramatic effect but in reality,
-    they have been by our side from the very beginning.\r\nThere have been quite a
-    few tragedies in history where groups of people were harmed and or killed by the
-    actions of selfish or misguided individuals. \r\n\u2026\r\nThere have also been
-    many heart-warming or awe-inspiring stories about individuals who did amazing
+    they have been by our side from the very beginning. \r\nThere have been quite
+    a few tragedies in history where groups of people were harmed and or killed by
+    the actions of selfish or misguided individuals.  \r\n\u2026 \r\nThere have also
+    been many heart-warming or awe-inspiring stories about individuals who did amazing
     things that saved hundreds of lives, surpassed every preconceived expectation
-    and or revolutionized the world forever. \r\n...\n"
-  - "A \u201CNew\u201D Race\r\nAfter reading the records, biographies and documentations
-    surrounding those people, I noticed they all shared the qualities listed above.\r\n\u2026\r\n\u2026but
-    further studies are necessary for us to fully understand the who, why and how
-    of this race known as \u201CCharaks.\u201D \r\n..."
+    and or revolutionized the world forever.  \r\n\u2026 \r\nAfter reading the records,
+    biographies and documentations surrounding those people, I noticed they all shared
+    the qualities listed above. \r\n"
+  - "A \u201CNew\u201D Race \n\u2026but further studies are necessary for us to fully
+    understand these \u201CCharaks.\u201D  \r\n\u2026 \r\n(Note: The article was criticized
+    for its informal presentation but was published and gained mainstream attention.)"
 --- !u!4 &2134259214987493762
 Transform:
   m_ObjectHideFlags: 0

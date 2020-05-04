@@ -85,28 +85,24 @@ public class TextnEvent : MonoBehaviour
                 currentEvent = 1;
                 page = 0;
                 chosen = true;
-                AffectionChange();
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 currentEvent = 2;
                 page = 0;
                 chosen = true;
-                AffectionChange();
             }
             if ((Input.GetKeyDown(KeyCode.Alpha3)) && (choices >= 3))
             {
                 currentEvent = 3;
                 page = 0;
                 chosen = true;
-                AffectionChange();
             }
             if ((Input.GetKeyDown(KeyCode.Alpha4)) && (choices == 4))
             {
                 currentEvent = 4;
                 page = 0;
                 chosen = true;
-                AffectionChange();
             }
         }
     }
@@ -198,7 +194,7 @@ public class TextnEvent : MonoBehaviour
         }
     }
 
-    // Loads next scene after "1" is pressed on the last page of an event array.
+    // Loads next scene after "1" is pressed on the last page of an event array and adds affection points.
     public void NextScene()
     {
         if ((
@@ -208,6 +204,7 @@ public class TextnEvent : MonoBehaviour
             (event4Text.Length == page) && (currentEvent == 4)
            ))
         {
+            AffectionChange();
             saveNScene.LoadScene();
         }
     }

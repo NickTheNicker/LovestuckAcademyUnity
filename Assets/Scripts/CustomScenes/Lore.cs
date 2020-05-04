@@ -25,7 +25,7 @@ public class Lore : MonoBehaviour
     // Displays the next page of text "page" is smaller than the maximum index of "text".
     public void NextPage()
     {
-        if ((Input.GetKeyDown(KeyCode.Alpha2)) && (page < text.Length))
+        if ((Input.GetKeyDown(KeyCode.Alpha2)) && (page < text.Length-1))
         {
                 page += 1;
         }
