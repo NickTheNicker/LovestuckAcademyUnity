@@ -57,7 +57,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Lilith/LilithMeet.unity
     guid: 5d044b360da87f64fa1c04a25e382ffc
   - enabled: 1
-    path: Assets/Scenes/Lilith/Rooftop1st.unity
+    path: Assets/Scenes/Lilith/LilithNormal.unity
+    guid: 16424c4f085eea9428f9d1ddb59c99cb
+  - enabled: 1
+    path: Assets/Scenes/Lilith/LilithSad.unity
+    guid: 04014e2e15513e6449a841b4a46c6f20
+  - enabled: 1
+    path: Assets/Scenes/Lilith/LilithHappy.unity
+    guid: 6685e77e623ef5942867b651ac05a617
+  - enabled: 1
+    path: Assets/Scenes/Lilith/Roof1st.unity
     guid: d470ab761ecb2464084b6a41c850baa8
   - enabled: 1
     path: Assets/Scenes/Lunch/LunchMeet.unity
