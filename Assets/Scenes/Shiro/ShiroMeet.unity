@@ -1260,7 +1260,7 @@ MonoBehaviour:
     sMeet: 0
     lMeet: 0
     eMeet: 0
-  loadName: LunchMeet
+  loadName: Classes
   saveExists: 0
 --- !u!1 &2134259215660527579
 GameObject:
