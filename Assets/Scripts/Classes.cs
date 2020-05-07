@@ -28,12 +28,20 @@ public class Classes : MonoBehaviour
             iText.text = text[page].ToString();
     }
 
-    // Loads a random lunch scene after 1 is pressed.
-    public void LunchScene()
+    // Sets "page" as a random interger number between 1 and the page length(inclusive) when page = 0.
+    public void Next()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            saveNScene.LoadScene();
+            if (page == 0)
+            {
+                page = UnityEngine.Random.Range(1, text.Length + 1);
+            }
+            else
+            {
+                // Loads a random lunch scene selected at start.
+                saveNScene.LoadScene();
+            }
         }
     }
 
@@ -42,9 +50,6 @@ public class Classes : MonoBehaviour
     {
         iText = GameObject.Find("TextBoxText").GetComponent<Text>();
         saveNScene = GameObject.Find("ScriptHolder").GetComponent<SavenSceneLoader>();
-
-        // Sets "page" as a random interger number between 0 and the page length(inclusive).
-        page = UnityEngine.Random.Range(1, text.Length+1);
 
         // Contains the the names of all lunch scenes.
         Dictionary<int, string>
@@ -72,6 +77,6 @@ public class Classes : MonoBehaviour
     void Update()
     {
         TextDisplay();
-        LunchScene();
+        Next();
     }
 }

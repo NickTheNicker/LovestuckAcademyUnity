@@ -50,15 +50,23 @@ public class TextnEvent : MonoBehaviour
     [TextArea(4, 50)]
     public string[] event4Text;
 
-    // Displays the next page of text.
+    // Displays the next page of text if not at a choice page.
     public void NextPage()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            page += 1;
+            // For readibility sake by separating complex conditions.
+            if ( (currentEvent != 0) || (page != startingText.Length - 1))
+            {
+                page += 1;
+            }
         }
 
         // Required for the choice system to function.
+        if (Input.GetKeyDown(KeyCode.Alpha1) && (startingText.Length - 1 == page) && (!chosen))
+        {
+            page += 1;
+        }
         if ((Input.GetKeyDown(KeyCode.Alpha2)) && (startingText.Length - 1 == page) && (!chosen))
         {
             page += 1;

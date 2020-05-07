@@ -33,7 +33,7 @@ public class TextOnly : MonoBehaviour
     // Displays the next page of text.
     public void NextPage()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             page += 1;
         }

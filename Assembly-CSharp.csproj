@@ -60,16 +60,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CustomScenes\AffectionDisplay.cs" />
-    <Compile Include="Assets\Scripts\CustomScenes\Classes.cs" />
-    <Compile Include="Assets\Scripts\CustomScenes\Elevator.cs" />
+    <Compile Include="Assets\Scripts\AffectionDisplay.cs" />
+    <Compile Include="Assets\Scripts\Classes.cs" />
     <Compile Include="Assets\Scripts\CustomScenes\FirstDay.cs" />
     <Compile Include="Assets\Scripts\CustomScenes\FirstDayImage.cs" />
-    <Compile Include="Assets\Scripts\CustomScenes\Homeroom.cs" />
-    <Compile Include="Assets\Scripts\CustomScenes\Introduction.cs" />
-    <Compile Include="Assets\Scripts\CustomScenes\Lore.cs" />
+    <Compile Include="Assets\Scripts\Elevator.cs" />
+    <Compile Include="Assets\Scripts\Homeroom.cs" />
     <Compile Include="Assets\Scripts\ImageSystemChoice.cs" />
     <Compile Include="Assets\Scripts\ImageSystemText.cs" />
+    <Compile Include="Assets\Scripts\Introduction.cs" />
+    <Compile Include="Assets\Scripts\Lore.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Save.cs" />
     <Compile Include="Assets\Scripts\SavenSceneLoader.cs" />

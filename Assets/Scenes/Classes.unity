@@ -194,14 +194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!222 &179565108550290401
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895539030013427104}
-  m_CullTransparentMesh: 0
 --- !u!222 &186037976229166847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -210,25 +202,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2518931010353641563}
   m_CullTransparentMesh: 0
---- !u!224 &856769154377688655
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895539030013427104}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6999998, y: 1.6999998, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6398829989998375963}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386.8, y: -215}
-  m_SizeDelta: {x: 11, y: 10}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1074772250841629389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,53 +325,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2848308865739497603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895539030013427104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8193a571fdfc3444e96db38baddfd923, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!1 &2895539030013427104
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 856769154377688655}
-  - component: {fileID: 179565108550290401}
-  - component: {fileID: 2848308865739497603}
-  m_Layer: 5
-  m_Name: 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &3690865329396187261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,8 +400,14 @@ MonoBehaviour:
     lastScene: Introduction
     lunchCount: 0
     sMeet: 0
+    club1: 0
+    club2: 0
     lMeet: 0
+    roof1: 0
+    roof2: 0
     eMeet: 0
+    library1: 0
+    library2: 0
   loadName: 
   saveExists: 0
 --- !u!1 &4304150372219378753
@@ -542,7 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   page: 0
   text:
-  - "Someone farted in science class.\r\n\n"
+  - You go to your scheduled classes and then for lunch.
   - "The math teacher told a bad joke.\r\n"
   - "The science teacher made a pun\u2026 that\u2019s unacceptable.\r\n"
   - "You think about the vision you had last night about a blood-soaked girl, standing
@@ -564,6 +496,7 @@ MonoBehaviour:
   - "You did an essay on an anime.\r\n"
   - "A girl with cat ears acidentally tackled you on the way to class, twice.\r\n"
   - "You found out red pandas are not actually pandas.\r"
+  - "Someone farted in science class.\r\n"
 --- !u!222 &4833655328930803838
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -585,7 +518,6 @@ RectTransform:
   m_Children:
   - {fileID: 2068613437415476671}
   - {fileID: 9027090572849390689}
-  - {fileID: 856769154377688655}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

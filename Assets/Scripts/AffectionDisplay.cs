@@ -21,6 +21,15 @@ public class AffectionDisplay : MonoBehaviour
         iText.text = text;
     }
 
+    // Loads the menu scene when the "Esc" key is pressed.
+    public void LoadMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            saveNScene.Menu();
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,5 +41,6 @@ public class AffectionDisplay : MonoBehaviour
     void Update()
     {
         AffectionText();
+        LoadMenu();
     }
 }

@@ -38,16 +38,24 @@ public class FirstDay : MonoBehaviour
     [TextArea(4, 50)]
     public string[] event4Text;
 
-    // Displays the next page of text.
+    // Displays the next page of text if not at a choice page.
     public void NextPage()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            page += 1;
+            // For readibility sake by separating complex conditions.
+            if ((currentEvent != 0) || (page != startingText.Length - 1))
+            {
+                page += 1;
+            }
         }
 
         // Required for the choice system to function.
-        if ((Input.GetKeyDown(KeyCode.Alpha2)) && (startingText.Length-1 == page) && (!chosen))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && (startingText.Length - 1 == page) && (!chosen))
+        {
+            page += 1;
+        }
+        if ((Input.GetKeyDown(KeyCode.Alpha2)) && (startingText.Length - 1 == page) && (!chosen))
         {
             page += 1;
         }
@@ -73,28 +81,24 @@ public class FirstDay : MonoBehaviour
                 currentEvent = 1;
                 page = 0;
                 chosen = true;
-           
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 currentEvent = 2;
                 page = 0;
                 chosen = true;
-                save.lAffection += 2;
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 currentEvent = 3;
                 page = 0;
                 chosen = true;
-                save.eAffection += 2;
             }
             if (Input.GetKeyDown(KeyCode.Alpha4)) 
             {
                 currentEvent = 4;
                 page = 0;
                 chosen = true;
-                save.sAffection += 2;
             }
         }     
     }
@@ -134,8 +138,22 @@ public class FirstDay : MonoBehaviour
             (event4Text.Length == page) && (currentEvent == 4)
            ))
         {
-            // When "Loadscene()" is carried out the scene loaded is "Homeroom".
-            saveNScene.LoadScene();
+            // Adds affection points based on the choice you made.
+            switch (currentEvent)
+            {
+                case 2:
+                    save.lAffection += 2;
+                    break;
+                case 3:
+                    save.eAffection += 2;
+                    break;
+                case 4:
+                    save.sAffection += 2;
+                    break;
+            }
+               
+                // When "Loadscene()" is carried out the scene loaded is "Homeroom".
+                saveNScene.LoadScene();
         }
     }
 

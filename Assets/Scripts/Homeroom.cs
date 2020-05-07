@@ -158,7 +158,7 @@ public class Homeroom : MonoBehaviour
       
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-            // "loadName" = Random canteen scene
+            saveNScene.loadName = "Classes"; 
             saveNScene.LoadScene();
             }
     }

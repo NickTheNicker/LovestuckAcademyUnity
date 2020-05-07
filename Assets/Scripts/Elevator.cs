@@ -13,6 +13,9 @@ public class Elevator : MonoBehaviour
     SavenSceneLoader saveNScene;
     public Save save;
 
+    // When false = Transition text, when true = choice event.
+    private bool choice = false;
+
     string skip = "1)Go home";
     string shiro1 = "(Talk to the person with cat ears to unlock)";
     string shiro2 = "2)Go to the anime club ";
@@ -20,6 +23,15 @@ public class Elevator : MonoBehaviour
     string lilith2 = "3)Go to the rooftop ";
     string elora1 = "(Talk to the person with a multi-gem bracelet to unlock)";
     string elora2 = "4)Go to the library ";
+    
+    // Changes choice from false to true when space is pressed.
+    public void Space()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            choice = true;
+        }
+    }
     
 
     // Methods that change text based on bools in "Save".
@@ -60,71 +72,89 @@ public class Elevator : MonoBehaviour
     // Selects Shiro Homeroom scenes.
     public void Shiro()
     {
-        if (!save.sMeet)
+        if (save.sMeet)
         {
-            saveNScene.loadName = "ShiroMeet";
+            if (!save.club1)
+            {
+                saveNScene.loadName = "Club1st";
+            }
+            else
+                saveNScene.loadName = "ClubFill";
         }
-
     }
 
     // Selects Lilith Homeroom scenes.
     public void Lilith()
     {
-        if (!save.lMeet)
+        if (save.lMeet)
         {
-            saveNScene.loadName = "LilithMeet";
+            if (!save.library1)
+            {
+                saveNScene.loadName = "Roof1st";
+            }
+            else saveNScene.loadName = "RoofFill";
         }
-
     }
 
     // Selects Elora Homeroom scenes.
     public void Elora()
     {
-        if (!save.eMeet)
+        if (save.eMeet)
         {
-            saveNScene.loadName = "EloraMeet";
+            if (!save.library1)
+            {
+                saveNScene.loadName = "Library1st";
+            }
+            else saveNScene.loadName = "LibraryFill";
         }
-
     }
 
     // Gives choices which diverge into separate events.
     public void Choice()
     {
+        // Only functions when choice is true.
+        if (choice)
+        { 
         if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            saveNScene.loadName = "Home";
+            saveNScene.LoadScene();
+        }
+
+        if ((Input.GetKeyDown(KeyCode.Alpha2)) && (save.sMeet))
         {
             Shiro();
             saveNScene.LoadScene();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if ((Input.GetKeyDown(KeyCode.Alpha3)) && (save.lMeet))
         {
             Lilith();
             saveNScene.LoadScene();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if ((Input.GetKeyDown(KeyCode.Alpha4)) && (save.eMeet))
         {
             Elora();
             saveNScene.LoadScene();
         }
-
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            // "loadName" = Random canteen scene
-            saveNScene.LoadScene();
         }
     }
 
     // Displays text corresponding to the "page" number for elements in the currently used array.
     public void TextDisplay()
     {
-        string displayedText
+        string displayedText2
             = skip + Environment.NewLine 
             + ShiroText() + Environment.NewLine
             + LilithText() + Environment.NewLine
             + EloraText();
-       
-        iText.text = displayedText;
+
+        if (choice)
+        {
+            iText.text = displayedText2;
+        }
+        else iText.text = "You finish lunch and the rest of your classes.";
     }
 
     // Loads the menu scene when the "Esc" key is pressed.
@@ -146,6 +176,7 @@ public class Elevator : MonoBehaviour
     // Update is called once per frame.
     void Update()
     {
+        Space();
         TextDisplay();
         Choice();
         LoadMenu();

@@ -22,13 +22,18 @@ public class Save
 
     // Character Events where false = has not seen and true = has seen.
 
-    // Shiro Event. 
+    // Shiro Events. 
     public bool sMeet = false;
+    public bool club1 = false;
+    public bool club2 = false;
 
     // Lilith Events.
     public bool lMeet = false;
+    public bool roof1 = false;
+    public bool roof2 = false;
 
     // Elora Events.
     public bool eMeet = false;
-
+    public bool library1 = false;
+    public bool library2 = false;
 }
