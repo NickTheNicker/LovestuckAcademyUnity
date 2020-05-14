@@ -112,15 +112,22 @@ public class SavenSceneLoader : MonoBehaviour
         }
     }
 
+    public void LoadLastScene()
+    {
+        SceneManager.LoadScene(save.lastScene);
+    }
+
     void Start()
     {
         // Saves the current scene you are on.
+        CheckSave();
+        LoadFromFile();  
+    }
+    private void Update()
+    {
         if (SceneManager.GetActiveScene().name != "Menu")
         {
             save.lastScene = SceneManager.GetActiveScene().name;
         }
-
-        CheckSave();
-        LoadFromFile();
     }
 }

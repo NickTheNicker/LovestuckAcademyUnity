@@ -15,7 +15,7 @@ public class Save
     public int eAffection = 0;
 
     // The last scene the player was in.
-    public string lastScene = "Introduction";
+    public string lastScene;
 
     // Tracks progress through lunch events.
     public int lunchCount = 0;

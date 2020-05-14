@@ -110,4 +110,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Elora/LibraryFill.unity
     guid: b820a7f1bdd67eb47b866f43ab7968f9
+  - enabled: 1
+    path: Assets/Scenes/Lilith/Roof2nd.unity
+    guid: 89b52d8b0da04a54fb8e9446da9b4da7
   m_configObjects: {}

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Elevator.cs" />
     <Compile Include="Assets\Scripts\Homeroom.cs" />
     <Compile Include="Assets\Scripts\ImageSystemChoice.cs" />
+    <Compile Include="Assets\Scripts\ImageSystemChoice2.cs" />
     <Compile Include="Assets\Scripts\ImageSystemText.cs" />
     <Compile Include="Assets\Scripts\Introduction.cs" />
     <Compile Include="Assets\Scripts\Lore.cs" />

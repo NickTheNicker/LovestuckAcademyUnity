@@ -88,9 +88,13 @@ public class Elevator : MonoBehaviour
     {
         if (save.lMeet)
         {
-            if (!save.library1)
+            if (!save.roof1)
             {
                 saveNScene.loadName = "Roof1st";
+            }
+            else if ((!save.roof2) && (save.lAffection >= 16))
+            {
+                saveNScene.loadName = "Roof2nd";
             }
             else saveNScene.loadName = "RoofFill";
         }

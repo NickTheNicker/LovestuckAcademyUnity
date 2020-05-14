@@ -42,7 +42,7 @@ public class Menu : MonoBehaviour
         {
             saveNScene.ForceDeleteSaves();
             SceneManager.LoadScene("Introduction");
-        }
+        } 
     }
 
     // Loads save data if any.
@@ -50,7 +50,7 @@ public class Menu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene(save.lastScene);
+            saveNScene.LoadLastScene();
         }
     }
 
@@ -105,7 +105,6 @@ void Start()
         Quit();
         Lore();
         Affection();
-
     }
 }
 
