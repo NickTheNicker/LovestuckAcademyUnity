@@ -78,8 +78,11 @@ public class Elevator : MonoBehaviour
             {
                 saveNScene.loadName = "Club1st";
             }
-            else
-                saveNScene.loadName = "ClubFill";
+            else if ((!save.club2) && (save.sAffection >= 16))
+            {
+                saveNScene.loadName = "Club2nd";
+            }
+            else saveNScene.loadName = "ClubFill";
         }
     }
 
@@ -108,6 +111,10 @@ public class Elevator : MonoBehaviour
             if (!save.library1)
             {
                 saveNScene.loadName = "Library1st";
+            }
+            else if ((!save.library2) && (save.eAffection >= 16))
+            {
+                saveNScene.loadName = "Library2nd";
             }
             else saveNScene.loadName = "LibraryFill";
         }

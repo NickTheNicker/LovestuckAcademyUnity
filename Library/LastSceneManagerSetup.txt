@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Lilith/Roof2nd.unity
+- path: Assets/Scenes/Lilith/RoofFill.unity
   isLoaded: 1
   isActive: 1
