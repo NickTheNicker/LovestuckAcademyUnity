@@ -11,13 +11,13 @@ public class SavenSceneLoader : MonoBehaviour
     public Save save;
 
     public string loadName;
+    public string currentScene;
     public bool saveExists;
+    
 
     // Loads the "Menu" scene.
     public void Menu()
     {
-        // Saves progress.
-        SaveToFile();
         SceneManager.LoadScene("Menu");
     }
 
@@ -27,7 +27,7 @@ public class SavenSceneLoader : MonoBehaviour
         SceneManager.LoadScene("FirstDay");
     }
 
-    // Loads a specified scene.
+    // Loads the scene named in the string "loadName".
     public void LoadScene()
     {
         SceneManager.LoadScene(loadName);
@@ -117,17 +117,76 @@ public class SavenSceneLoader : MonoBehaviour
         SceneManager.LoadScene(save.lastScene);
     }
 
+    // Tracks the scenes you have already seen by updating bools in save.
+    public void SaveTracker()
+    {
+        switch (currentScene)
+        {
+            case "ShiroMeet":
+                save.sMeet = true;
+                break;
+            case "Club1st":
+                save.club1 = true;
+                break;
+            case "Club2nd":
+                save.club2 = true;
+                break;
+            case "Club3rd":
+                save.club3 = true;
+                break;
+
+            case "LilithMeet":
+                save.lMeet = true;
+                break;
+            case "Roof1st":
+                save.roof1 = true;
+                break;
+            case "Roof2nd":
+                save.roof2 = true;
+                break;
+            case "Roof3rd":
+                save.roof3 = true;
+                break;
+
+            case "EloraMeet":
+                save.eMeet = true;
+                break;
+            case "Library1st":
+                save.library1 = true;
+                break;
+            case "Library2nd":
+                save.library2 = true;
+                break;
+            case "Library3rd":
+                save.library3 = true;
+                break;
+        }
+    }
+
     void Start()
     {
-        // Saves the current scene you are on.
+        // Checks and gets the save file.
         CheckSave();
-        LoadFromFile();  
+        LoadFromFile();
+
+        // Gets the name of the current scene.
+        currentScene = SceneManager.GetActiveScene().name;
+
+        SaveTracker();
     }
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name != "Menu")
+        // Saves the name of the current scene you are on.
+        if (  (currentScene != "Menu") && (currentScene != "Lore") && (currentScene != "Affection") )
         {
             save.lastScene = SceneManager.GetActiveScene().name;
+            SaveToFile();
         }
+
+        Debug.Log(save.sAffection);
+        Debug.Log(save.lunchCount);
+        Debug.Log(save.sMeet);
+        Debug.Log(save.club1);
+        Debug.Log(save.lastScene);
     }
 }

@@ -10,14 +10,13 @@ public class AffectionDisplay : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    public Save save;
 
     public void AffectionText()
     {
         string text = "Character Affection" + Environment.NewLine + Environment.NewLine +
-            "Shiro " + save.sAffection + " Affection points" + Environment.NewLine + Environment.NewLine +
-            "Lilith " + save.lAffection + " Affection points" + Environment.NewLine + Environment.NewLine +
-            "Elora  " + save.eAffection + " Affection points";
+            "Shiro " + saveNScene.save.sAffection + " Affection points" + Environment.NewLine + Environment.NewLine +
+            "Lilith " + saveNScene.save.lAffection + " Affection points" + Environment.NewLine + Environment.NewLine +
+            "Elora  " + saveNScene.save.eAffection + " Affection points";
         iText.text = text;
     }
 

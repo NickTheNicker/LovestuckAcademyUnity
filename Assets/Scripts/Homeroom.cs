@@ -12,7 +12,6 @@ public class Homeroom : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    public Save save;
 
     string shiro1 = "1)Talk to the person with cat ears.";
     string shiro2 = "1)Talk to Shiro";
@@ -30,7 +29,7 @@ public class Homeroom : MonoBehaviour
     // Methods that change text based on bools in "Save".
     private string ShiroText()
     {
-        if (save.sMeet)
+        if (saveNScene.save.sMeet)
         {
             return shiro2;
         }
@@ -41,7 +40,7 @@ public class Homeroom : MonoBehaviour
     }
     private string LilithText()
     {
-        if(save.lMeet)
+        if(saveNScene.save.lMeet)
         {
             return lilith2;
         }
@@ -52,7 +51,7 @@ public class Homeroom : MonoBehaviour
     }
     private string EloraText()
     {
-        if (save.eMeet)
+        if (saveNScene.save.eMeet)
         {
             return elora2;
         }
@@ -65,7 +64,7 @@ public class Homeroom : MonoBehaviour
     // Selects Shiro Homeroom scenes based on "mood".
     public void Shiro()
     {
-        if (!save.sMeet)
+        if (!saveNScene.save.sMeet)
         {
             saveNScene.loadName = "ShiroMeet";
         }
@@ -89,7 +88,7 @@ public class Homeroom : MonoBehaviour
     // Selects Lilith Homeroom scenes based on "mood".
     public void Lilith()
     {
-        if (!save.lMeet)
+        if (!saveNScene.save.lMeet)
         {
             saveNScene.loadName = "LilithMeet";
         }
@@ -113,7 +112,7 @@ public class Homeroom : MonoBehaviour
     // Selects Elora Homeroom scenes based on "mood".
     public void Elora()
     {
-        if(!save.eMeet)
+        if(!saveNScene.save.eMeet)
         {
             saveNScene.loadName = "EloraMeet";
         }

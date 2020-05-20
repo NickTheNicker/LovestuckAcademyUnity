@@ -29,6 +29,7 @@ Assets/Scenes/Lunch/Sexes.unity
 Assets/Scenes/Lunch/Fornication.unity
 Assets/Scenes/Lunch/The Prodigy.unity
 Assets/Scenes/Lunch/Eliza and Prisca.unity
+Assets/Scenes/Elora/Library2nd.unity
 Assets/Scenes/Lunch/Disappearance.unity
 Assets/Scenes/Lunch/Uniforms.unity
 Assets/Scenes/Affection.unity
@@ -37,6 +38,8 @@ Assets/Scenes/Classes.unity
 Assets/Scenes/Shiro/ClubFill.unity
 Assets/Scenes/Lilith/RoofFill.unity
 Assets/Scenes/Elora/LibraryFill.unity
+Assets/Scenes/Lilith/Roof2nd.unity
+Assets/Scenes/Shiro/Club2nd.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -52,7 +55,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-e18ac552b7beff97911ba343cdb341b1 Assembly-CSharp.dll:.FirstDay
+04abb1fb39baa2063786e4071c6e608e Assembly-CSharp.dll:.FirstDay
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -151,7 +154,8 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
-fe058610869a780e6d98ea40d7f1c0f1 Assembly-CSharp.dll:.Homeroom
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Homeroom
+49ccaf63cfabd48196b8cf7e3d92651f Assembly-CSharp.dll:.ImageSystemChoice2
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 d4378e40c6fdd7b2aed75c8f7841e2af Assembly-CSharp.dll:.Classes
 b6895c45b7653181b51626c67dbf489c Assembly-CSharp.dll:.TextnEvent
@@ -193,7 +197,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 b96910c9660d405a98f25b88f0de757e Assembly-CSharp.dll:.TextOnly
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
-fe058610869a780e6d98ea40d7f1c0f1 Assembly-CSharp.dll:.Elevator
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Elevator
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 d906fd3253ec8cefa8890322c754db3a Assembly-CSharp.dll:.FirstDayImage
@@ -201,8 +205,8 @@ d906fd3253ec8cefa8890322c754db3a Assembly-CSharp.dll:.FirstDayImage
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
-fe058610869a780e6d98ea40d7f1c0f1 Assembly-CSharp.dll:.Menu
+c8b261099164275b754268e8e4887d90 Assembly-CSharp.dll:.Menu
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-fe058610869a780e6d98ea40d7f1c0f1 Assembly-CSharp.dll:.AffectionDisplay
-ae369a231f36a8593fb75e8d94e1a067 Assembly-CSharp.dll:.SavenSceneLoader
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.AffectionDisplay
+d33cafe12cfa373a123e414db2d9b9e8 Assembly-CSharp.dll:.SavenSceneLoader
 d906fd3253ec8cefa8890322c754db3a Assembly-CSharp.dll:.ImageSystemChoice

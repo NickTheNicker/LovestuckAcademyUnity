@@ -87,6 +87,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lunch/Eliza and Prisca.unity
     guid: 91b48df3731caa3449e94678a7dc827e
   - enabled: 1
+    path: Assets/Scenes/Elora/Library2nd.unity
+    guid: cf8b5536ade812a45adc5d80c2d4efa0
+  - enabled: 1
     path: Assets/Scenes/Lunch/Disappearance.unity
     guid: c2e02c78a33177348bb215690c9daf66
   - enabled: 1

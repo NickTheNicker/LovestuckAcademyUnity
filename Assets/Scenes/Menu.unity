@@ -554,8 +554,17 @@ MonoBehaviour:
     lastScene: Introduction
     lunchCount: 0
     sMeet: 0
+    club1: 0
+    club2: 0
+    club3: 0
     lMeet: 0
+    roof1: 0
+    roof2: 0
+    roof3: 0
     eMeet: 0
+    library1: 0
+    library2: 0
+    library3: 0
 --- !u!1 &924017155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,9 +1759,19 @@ MonoBehaviour:
     lastScene: Introduction
     lunchCount: 0
     sMeet: 0
+    club1: 0
+    club2: 0
+    club3: 0
     lMeet: 0
+    roof1: 0
+    roof2: 0
+    roof3: 0
     eMeet: 0
+    library1: 0
+    library2: 0
+    library3: 0
   loadName: 
+  currentScene: 
   saveExists: 0
 --- !u!1 &2134259214815974437
 GameObject:

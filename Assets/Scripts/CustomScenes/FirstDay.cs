@@ -11,7 +11,6 @@ public class FirstDay : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    public Save save;
 
     // Variables.
 
@@ -142,13 +141,13 @@ public class FirstDay : MonoBehaviour
             switch (currentEvent)
             {
                 case 2:
-                    save.lAffection += 2;
+                    saveNScene.save.lAffection += 2;
                     break;
                 case 3:
-                    save.eAffection += 2;
+                    saveNScene.save.eAffection += 2;
                     break;
                 case 4:
-                    save.sAffection += 2;
+                    saveNScene.save.sAffection += 2;
                     break;
             }
                

@@ -11,8 +11,6 @@ public class TextOnly : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    Save save = new Save();
-
 
     // Variables.
 
@@ -53,11 +51,11 @@ public class TextOnly : MonoBehaviour
         switch (character)
         {
             // Shiro
-            case 1: save.sAffection += affectionChange; break;
+            case 1: saveNScene.save.sAffection += affectionChange; break;
             // Lilith
-            case 2: save.lAffection += affectionChange; break;
+            case 2: saveNScene.save.lAffection += affectionChange; break;
             // Elora
-            case 3: save.eAffection += affectionChange; break;
+            case 3: saveNScene.save.eAffection += affectionChange; break;
         }
     }
 
@@ -67,6 +65,7 @@ public class TextOnly : MonoBehaviour
         if (text.Length == page)
         {
             AffectionChange();
+            saveNScene.SaveToFile();
             saveNScene.LoadScene();
         }
     }
@@ -94,5 +93,7 @@ public class TextOnly : MonoBehaviour
         NextPage();
         NextScene();
         LoadMenu();
+
+
     }
 }

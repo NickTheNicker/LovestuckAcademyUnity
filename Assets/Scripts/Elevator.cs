@@ -11,7 +11,6 @@ public class Elevator : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    public Save save;
 
     // When false = Transition text, when true = choice event.
     private bool choice = false;
@@ -37,7 +36,7 @@ public class Elevator : MonoBehaviour
     // Methods that change text based on bools in "Save".
     private string ShiroText()
     {
-        if (save.sMeet)
+        if (saveNScene.save.sMeet)
         {
             return shiro2;
         }
@@ -48,7 +47,7 @@ public class Elevator : MonoBehaviour
     }
     private string LilithText()
     {
-        if (save.lMeet)
+        if (saveNScene.save.lMeet)
         {
             return lilith2;
         }
@@ -59,7 +58,7 @@ public class Elevator : MonoBehaviour
     }
     private string EloraText()
     {
-        if (save.eMeet)
+        if (saveNScene.save.eMeet)
         {
             return elora2;
         }
@@ -72,13 +71,13 @@ public class Elevator : MonoBehaviour
     // Selects Shiro Homeroom scenes.
     public void Shiro()
     {
-        if (save.sMeet)
+        if (saveNScene.save.sMeet)
         {
-            if (!save.club1)
+            if (!saveNScene.save.club1)
             {
                 saveNScene.loadName = "Club1st";
             }
-            else if ((!save.club2) && (save.sAffection >= 16))
+            else if ((!saveNScene.save.club2) && (saveNScene.save.sAffection >= 16))
             {
                 saveNScene.loadName = "Club2nd";
             }
@@ -89,13 +88,13 @@ public class Elevator : MonoBehaviour
     // Selects Lilith Homeroom scenes.
     public void Lilith()
     {
-        if (save.lMeet)
+        if (saveNScene.save.lMeet)
         {
-            if (!save.roof1)
+            if (!saveNScene.save.roof1)
             {
                 saveNScene.loadName = "Roof1st";
             }
-            else if ((!save.roof2) && (save.lAffection >= 16))
+            else if ((!saveNScene.save.roof2) && (saveNScene.save.lAffection >= 16))
             {
                 saveNScene.loadName = "Roof2nd";
             }
@@ -106,13 +105,13 @@ public class Elevator : MonoBehaviour
     // Selects Elora Homeroom scenes.
     public void Elora()
     {
-        if (save.eMeet)
+        if (saveNScene.save.eMeet)
         {
-            if (!save.library1)
+            if (!saveNScene.save.library1)
             {
                 saveNScene.loadName = "Library1st";
             }
-            else if ((!save.library2) && (save.eAffection >= 16))
+            else if ((!saveNScene.save.library2) && (saveNScene.save.eAffection >= 16))
             {
                 saveNScene.loadName = "Library2nd";
             }
@@ -132,19 +131,19 @@ public class Elevator : MonoBehaviour
             saveNScene.LoadScene();
         }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha2)) && (save.sMeet))
+        if ((Input.GetKeyDown(KeyCode.Alpha2)) && (saveNScene.save.sMeet))
         {
             Shiro();
             saveNScene.LoadScene();
         }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha3)) && (save.lMeet))
+        if ((Input.GetKeyDown(KeyCode.Alpha3)) && (saveNScene.save.lMeet))
         {
             Lilith();
             saveNScene.LoadScene();
         }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha4)) && (save.eMeet))
+        if ((Input.GetKeyDown(KeyCode.Alpha4)) && (saveNScene.save.eMeet))
         {
             Elora();
             saveNScene.LoadScene();

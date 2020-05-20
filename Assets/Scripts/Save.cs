@@ -6,34 +6,37 @@ using UnityEngine;
 public class Save 
 {
     // Shiro's affection points.
-    public int sAffection = 0;
+    public int sAffection;
 
     // Lilith's affection points.
-    public int lAffection = 0;
+    public int lAffection;
 
     // Elora's affection points.
-    public int eAffection = 0;
+    public int eAffection;
 
     // The last scene the player was in.
     public string lastScene;
 
     // Tracks progress through lunch events.
-    public int lunchCount = 0;
+    public int lunchCount;
 
     // Character Events where false = has not seen and true = has seen.
 
     // Shiro Events. 
-    public bool sMeet = false;
-    public bool club1 = false;
-    public bool club2 = false;
+    public bool sMeet;
+    public bool club1;
+    public bool club2;
+    public bool club3;
 
     // Lilith Events.
-    public bool lMeet = false;
-    public bool roof1 = false;
-    public bool roof2 = false;
+    public bool lMeet;
+    public bool roof1;
+    public bool roof2;
+    public bool roof3;
 
     // Elora Events.
-    public bool eMeet = false;
-    public bool library1 = false;
-    public bool library2 = false;
+    public bool eMeet;
+    public bool library1;
+    public bool library2;
+    public bool library3;
 }

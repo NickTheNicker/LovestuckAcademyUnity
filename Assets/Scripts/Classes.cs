@@ -11,7 +11,6 @@ public class Classes : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    Save save = new Save();
 
     // Variables.
 
@@ -45,38 +44,48 @@ public class Classes : MonoBehaviour
         }
     }
 
+    // Resets "lunchCount" when it is larger than 8.
+    public void Reset()
+    {
+        if (saveNScene.save.lunchCount > 8)
+        {
+            saveNScene.save.lunchCount = 2;
+        }
+    }
+
     // Start is called before the first frame update.
     void Start()
     {
         iText = GameObject.Find("TextBoxText").GetComponent<Text>();
         saveNScene = GameObject.Find("ScriptHolder").GetComponent<SavenSceneLoader>();
 
-        // Contains the the names of all lunch scenes.
-        Dictionary<int, string>
-            addScene = new Dictionary<int, string>
-            {
-                { 1, "LunchMeet" },
-                { 2, "You" },
-                { 3, "Eliza and Prisca" },
-                { 4, "Fornication " },
-                { 5, "Sexes? " },
-                { 7, "Disappearance" },
-                { 8, "The Prodigy " },
-                { 9, "Uniform" }
-            };
-
         // Updates the "lunchCount".
-        save.lunchCount += 1;
-
-        // Selects a the next lunch scene based on "lunchCount".
-        saveNScene.loadName = addScene[save.lunchCount];
-
+        saveNScene.save.lunchCount += 1;
     }
+
+    // Contains the the names of all lunch scenes.
+    Dictionary<int, string>
+        addScene = new Dictionary<int, string>
+        {
+                { 1, "LunchMeet" },
+                { 2, "Disappearance" },
+                { 3, "Fornication" },
+                { 4, "Sexes" },
+                { 5, "Eliza and Prisca" },
+                { 6, "The Prodigy" },
+                { 7, "Uniforms" },
+                { 8, "You" },
+        };
+
 
     // Update is called once per frame.
     void Update()
     {
         TextDisplay();
         Next();
+        Reset();
+
+        // Selects a the next lunch scene based on "lunchCount".
+        saveNScene.loadName = addScene[saveNScene.save.lunchCount];
     }
 }

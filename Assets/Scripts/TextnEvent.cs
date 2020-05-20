@@ -11,7 +11,6 @@ public class TextnEvent : MonoBehaviour
     // Cached References.
     Text iText;
     SavenSceneLoader saveNScene;
-    Save save = new Save();
 
     // Variables.
     
@@ -125,16 +124,16 @@ public class TextnEvent : MonoBehaviour
                 switch (currentEvent)
                 {
                     case 1:
-                        save.sAffection += affectionChange1;
+                        saveNScene.save.sAffection += affectionChange1;
                         break;
                     case 2:
-                        save.sAffection += affectionChange2;
+                        saveNScene.save.sAffection += affectionChange2;
                         break;
                     case 3:
-                        save.sAffection += affectionChange3;
+                        saveNScene.save.sAffection += affectionChange3;
                         break;
                     case 4:
-                        save.sAffection += affectionChange4;
+                        saveNScene.save.sAffection += affectionChange4;
                         break;
                 }
                 break;
@@ -143,16 +142,16 @@ public class TextnEvent : MonoBehaviour
                 switch (currentEvent)
                 {
                     case 1:
-                        save.lAffection += affectionChange1;
+                        saveNScene.save.lAffection += affectionChange1;
                         break;
                     case 2:
-                        save.lAffection += affectionChange2;
+                        saveNScene.save.lAffection += affectionChange2;
                         break;
                     case 3:
-                        save.lAffection += affectionChange3;
+                        saveNScene.save.lAffection += affectionChange3;
                         break;
                     case 4:
-                        save.lAffection += affectionChange4;
+                        saveNScene.save.lAffection += affectionChange4;
                         break;
                 }
                 break;
@@ -161,16 +160,16 @@ public class TextnEvent : MonoBehaviour
                 switch (currentEvent)
                 {
                     case 1:
-                        save.eAffection += affectionChange1;
+                        saveNScene.save.eAffection += affectionChange1;
                         break;
                     case 2:
-                        save.eAffection += affectionChange2;
+                        saveNScene.save.eAffection += affectionChange2;
                         break;
                     case 3:
-                        save.eAffection += affectionChange3;
+                        saveNScene.save.eAffection += affectionChange3;
                         break;
                     case 4:
-                        save.eAffection += affectionChange4;
+                        saveNScene.save.eAffection += affectionChange4;
                         break;
                 }
                 break;
@@ -213,6 +212,7 @@ public class TextnEvent : MonoBehaviour
            ))
         {
             AffectionChange();
+            saveNScene.SaveToFile();
             saveNScene.LoadScene();
         }
     }
