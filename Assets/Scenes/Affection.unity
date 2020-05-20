@@ -263,14 +263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5074223fd9c647f4c9a92b890ba55c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  save:
-    sAffection: 0
-    lAffection: 0
-    eAffection: 0
-    lastScene: Introduction
-    sMeet: 0
-    lMeet: 0
-    eMeet: 0
 --- !u!114 &884056763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,7 +441,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -596,8 +588,19 @@ MonoBehaviour:
     lAffection: 0
     eAffection: 0
     lastScene: Introduction
+    lunchCount: 0
     sMeet: 0
+    club1: 0
+    club2: 0
+    club3: 0
     lMeet: 0
+    roof1: 0
+    roof2: 0
+    roof3: 0
     eMeet: 0
+    library1: 0
+    library2: 0
+    library3: 0
   loadName: Affection
+  currentScene: 
   saveExists: 0

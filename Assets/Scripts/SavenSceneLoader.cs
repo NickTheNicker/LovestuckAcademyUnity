@@ -183,10 +183,13 @@ public class SavenSceneLoader : MonoBehaviour
             SaveToFile();
         }
 
+
+        /* Save Testing Code.
         Debug.Log(save.sAffection);
         Debug.Log(save.lunchCount);
         Debug.Log(save.sMeet);
         Debug.Log(save.club1);
         Debug.Log(save.lastScene);
+        */
     }
 }

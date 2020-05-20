@@ -174,7 +174,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -602,9 +602,19 @@ MonoBehaviour:
     lastScene: Introduction
     lunchCount: 0
     sMeet: 0
+    club1: 0
+    club2: 0
+    club3: 0
     lMeet: 0
+    roof1: 0
+    roof2: 0
+    roof3: 0
     eMeet: 0
+    library1: 0
+    library2: 0
+    library3: 0
   loadName: Elevator
+  currentScene: 
   saveExists: 0
 --- !u!224 &8401635844879403940
 RectTransform:

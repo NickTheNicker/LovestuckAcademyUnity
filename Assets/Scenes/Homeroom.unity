@@ -174,7 +174,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -323,9 +323,19 @@ MonoBehaviour:
     lastScene: Introduction
     lunchCount: 0
     sMeet: 0
+    club1: 0
+    club2: 0
+    club3: 0
     lMeet: 0
+    roof1: 0
+    roof2: 0
+    roof3: 0
     eMeet: 0
+    library1: 0
+    library2: 0
+    library3: 0
   loadName: Homeroom
+  currentScene: 
   saveExists: 0
 --- !u!4 &2134259215465481307
 Transform:
@@ -372,15 +382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814cecc47cfd92a43bb39281ef769dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  save:
-    sAffection: 0
-    lAffection: 0
-    eAffection: 0
-    lastScene: Introduction
-    lunchCount: 0
-    sMeet: 0
-    lMeet: 0
-    eMeet: 0
 --- !u!222 &3137270224230477306
 CanvasRenderer:
   m_ObjectHideFlags: 0

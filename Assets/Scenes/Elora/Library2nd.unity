@@ -174,7 +174,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -1142,7 +1142,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4431507210716285509}
   - component: {fileID: 4431507210716285508}
-  - component: {fileID: 4431507210716285507}
   - component: {fileID: 4431507210716285506}
   - component: {fileID: 4431507210716285516}
   m_Layer: 5
@@ -1169,28 +1168,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4431507210716285507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4431507210716285505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!223 &4431507210716285508
 Canvas:
   m_ObjectHideFlags: 0
@@ -1793,13 +1770,17 @@ MonoBehaviour:
     sMeet: 0
     club1: 0
     club2: 0
+    club3: 0
     lMeet: 0
     roof1: 0
     roof2: 0
+    roof3: 0
     eMeet: 0
     library1: 0
     library2: 0
+    library3: 0
   loadName: Home
+  currentScene: 
   saveExists: 0
 --- !u!1 &5235114981035388081
 GameObject:
