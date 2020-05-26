@@ -343,18 +343,18 @@ MonoBehaviour:
   affectionChange: 0
   page: 0
   text:
-  - "Eli: You don\u2019t talk much do you?\r\n"
+  - "Ellie: You don\u2019t talk much do you?\r\n"
   - "Rin: Yeah, I rarely ever hear you in class.\r\n"
-  - "Eli: It\u2019s not ok for you to just listen. We want to hear what you think
+  - "Ellie: It\u2019s not ok for you to just listen. We want to hear what you think
     as well because we\u2019re your friends.\r\n\n"
   - "Rin: I agree whole heartedly, you\u2019re always helping me in class and listen
     to me complain about all my little problems. \r\n"
-  - "Eli: Even when you don\u2019t say anything, you always make the conversation
+  - "Ellie: Even when you don\u2019t say anything, you always make the conversation
     better just by being there somehow.\r\n"
   - "(\u2026)\r\n"
   - "Rin: Hey, hey, don\u2019t cry.\r\n"
   - "(\u2026)\r\n"
-  - "Eli and Rin: We love you too.\r"
+  - "Ellie and Rin: We love you too.\r"
 --- !u!223 &4776545663876830588
 Canvas:
   m_ObjectHideFlags: 0

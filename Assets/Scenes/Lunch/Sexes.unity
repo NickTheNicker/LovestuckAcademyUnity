@@ -344,14 +344,14 @@ MonoBehaviour:
   page: 0
   text:
   - "Rin: Imagine if humans were male and female like animals.\r\n \n"
-  - "Eli: That would be weird not having both a penis and a vagina.\r\n"
+  - "Ellie: That would be weird not having both a penis and a vagina.\r\n"
   - "Rin: How would you pee without a penis?\r\n"
-  - "Eli: We don\u2019t need the penis as we\u2019ll still have a urethra regardless.
+  - "Ellie: We don\u2019t need the penis as we\u2019ll still have a urethra regardless.
     We could just have a small knub and hole for it.\r"
   - "Rin: I\u2019d like to be male in that world then.\r\n"
-  - "Eli: I\u2019d want to be female though.\r\n"
+  - "Ellie: I\u2019d want to be female though.\r\n"
   - "Rin: Why?\r\n"
-  - "Eli: Remember that time we were playing soccer and I was goalie\u2026\r"
+  - "Ellie: Remember that time we were playing soccer and I was goalie\u2026\r"
   - "Rin: Oh yeah\u2026 I see."
 --- !u!223 &4776545664065743374
 Canvas:
@@ -1217,7 +1217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8401635846461434961}
   - component: {fileID: 8401635846461434960}
-  - component: {fileID: 8401635846461434967}
   - component: {fileID: 8401635846461434966}
   - component: {fileID: 8401635846461434962}
   m_Layer: 5
@@ -1244,28 +1243,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8401635846461434967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8401635846461434965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!1 &8401635846568466625
 GameObject:
   m_ObjectHideFlags: 0

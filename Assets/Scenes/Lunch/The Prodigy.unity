@@ -344,22 +344,21 @@ MonoBehaviour:
   page: 0
   text:
   - "Rin: You\u2019re quite close with Lilith aren\u2019t you\r\n"
-  - "Eli: I\u2019ve never seen anyone with her so often so you must be old friends.
+  - "Ellie: I\u2019ve never seen anyone with her so often so you must be old friends.
     \nOr something more? (winks) \n"
   - "Rin: She doesn\u2019t socialize much for someone so popular. So, what\u2019s
     your secret?\n\n"
-  - "Eli: You\u2019re nice and we love you but she\u2019s stolen and broken hundreds
+  - "Ellie: You\u2019re nice and we love you but she\u2019s stolen and broken hundreds
     of hearts. \r\n"
   - "Rin: I remember when I confessed to her: she didn\u2019t even let me finish and
     shot me down immediately.\r\n"
-  - "Eli: I mean what did you expect?\r"
-  - "Eli: She\u2019s second only to Eliza in academics, has won the 100m and 400m
+  - "Ellie: I mean what did you expect?\r"
+  - "Rin: Hey! \r"
+  - "Ellie: She\u2019s second only to Eliza in academics, has won the 100m and 400m
     dash in first place for 12 years straight and has been offered modelling jobs
-    from Chivalrous and Shareta.\r"
-  - "Eli: She\u2019s one of the top students, second only to Eliza, every year and
-    has been offered modelling jobs from Chivalrous and Shareta.\r"
+    from Chivalrous and Shareta. "
   - "Rin: Don\u2019t forget she\u2019s also the head of rules and regulations for
-    the student council\u2026 I get your point but it\u2019s still hurtful.\r"
+    the student council\u2026 I get your point but it\u2019s still hurtful. \r\n"
 --- !u!223 &4776545663109815483
 Canvas:
   m_ObjectHideFlags: 0
@@ -1298,7 +1297,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8401635846811619816}
   - component: {fileID: 8401635846811619817}
-  - component: {fileID: 8401635846811619822}
   - component: {fileID: 8401635846811619823}
   - component: {fileID: 8401635846811619819}
   m_Layer: 5
@@ -1308,28 +1306,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8401635846811619822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8401635846811619820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!114 &8401635846811619823
 MonoBehaviour:
   m_ObjectHideFlags: 0

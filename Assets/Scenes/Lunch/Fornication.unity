@@ -229,11 +229,12 @@ MonoBehaviour:
   affectionChange: 0
   page: 0
   text:
-  - "Eli: Can you imagine having sex before marriage?\r\n"
-  - "Rin: Eww, no. Who does that?\r\n"
-  - "Eli: Like I remember reading online that some people did it a long time ago but
-    like how?\r\n"
-  - "Rin: I don\u2019t know but sex without the ring doesn\u2019t sound fun at all.\r\n"
+  - "Ellie: Can you imagine having sex before marriage?\r\n"
+  - "Rin: Eww, no. Who does that?\r \n"
+  - "Ellie: Like I remember reading online that some people did it a long time ago
+    but like how?\r\n"
+  - "Rin: I don\u2019t know but sex without the ring doesn\u2019t sound fun at all.\r
+    Psychologists also say it\u2019s bad for relationship in the long term."
 --- !u!4 &2134259215085603077
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1044,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8401635846298974532}
   - component: {fileID: 8401635846298974533}
-  - component: {fileID: 8401635846298974530}
   - component: {fileID: 8401635846298974531}
   - component: {fileID: 8401635846298974535}
   m_Layer: 5
@@ -1053,28 +1053,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8401635846298974530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8401635846298974528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!114 &8401635846298974531
 MonoBehaviour:
   m_ObjectHideFlags: 0

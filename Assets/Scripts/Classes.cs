@@ -34,7 +34,7 @@ public class Classes : MonoBehaviour
         {
             if (page == 0)
             {
-                page = UnityEngine.Random.Range(1, text.Length + 1);
+                page = UnityEngine.Random.Range(1, text.Length);
             }
             else
             {

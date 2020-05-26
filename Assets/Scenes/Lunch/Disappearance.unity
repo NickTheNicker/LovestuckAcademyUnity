@@ -279,13 +279,15 @@ MonoBehaviour:
   affectionChange: 0
   page: 0
   text:
-  - "Eli: There was supposed to be another new student but she vanished on the first
+  - "Ellie: There was supposed to be another new student but she vanished on the first
     day.\r\n\n"
   - "Rin: Maybe she\u2019s sick.\r\n"
-  - "Eli: No, I met her in the toilet and she was perfectly healthy. She was supposed
+  - "Ellie: No, I met her in the toilet and she was perfectly healthy. She was supposed
     to be in my class but then I never saw her after that.\r\n"
   - "Rin: Last year a bunch of students disappeared as well.\r\n"
-  - "Eli: Who or what could be behind this?\r"
+  - "Ellie: Who or what could be behind this?\r"
+  - "Rin: Then again it could probably just be rumours and sudden transfers.\r\n"
+  - "Ellie: Yeah maybe. \r"
 --- !u!223 &4776545663854190623
 Canvas:
   m_ObjectHideFlags: 0
@@ -922,7 +924,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8401635845642227060}
   - component: {fileID: 8401635845642227061}
-  - component: {fileID: 8401635845642227058}
   - component: {fileID: 8401635845642227059}
   - component: {fileID: 8401635845642227063}
   m_Layer: 5
@@ -932,28 +933,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8401635845642227058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8401635845642227056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!114 &8401635845642227059
 MonoBehaviour:
   m_ObjectHideFlags: 0

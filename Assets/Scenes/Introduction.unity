@@ -570,8 +570,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Your choice doesn\u2019t matter as everyone is a futanari (hermaphrodite)
-    with the appearance of a woman.\n\n1) Continue\n2) Wait what?"
+  m_Text: "Your choice doesn\u2019t matter as everyone is a hermaphrodite (futanari).
+    \n\n1) Continue\n2) Wait what?"
 --- !u!222 &761789648
 CanvasRenderer:
   m_ObjectHideFlags: 0
