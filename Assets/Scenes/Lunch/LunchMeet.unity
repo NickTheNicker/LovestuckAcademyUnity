@@ -300,7 +300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -355.72, y: 208.98}
+  m_AnchoredPosition: {x: -355.71997, y: 216.68}
   m_SizeDelta: {x: 88.56, y: 16.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1424441502313462752
@@ -565,11 +565,11 @@ MonoBehaviour:
   - "Brunette with green eyes: And I\u2019m Ellie.\r\n\n"
   - "Rin: So how do you find Almitas Academy?\r\n\n"
   - "Ellie: Really something isn\u2019t it? I remember when I first came here and
-    everything just felt better than my old school.\r"
+    everything was just so high-end."
   - 'Rin: I was literally born here. '
   - (...)
-  - "How? Class reunion with some former classmates that were doctors and nurses.\r\n"
-  - "Ellie: The school was fully prepared for it and that\u2019s no surprise, somehow\u2026\r\n"
+  - "How? Class reunion, a couple of doctors and yeah.\r\n"
+  - "Ellie: The school was fully prepared for it, somehow\u2026 \r"
   - "\u2026\r\n"
   - "Rin: So, anyone you like ?\r"
 --- !u!224 &7637153265856526240

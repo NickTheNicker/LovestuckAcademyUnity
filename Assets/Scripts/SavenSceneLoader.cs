@@ -173,6 +173,9 @@ public class SavenSceneLoader : MonoBehaviour
         currentScene = SceneManager.GetActiveScene().name;
 
         SaveTracker();
+
+        // Hides the cursor.
+        Cursor.visible = false;
     }
     private void Update()
     {

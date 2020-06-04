@@ -561,15 +561,14 @@ MonoBehaviour:
   text:
   - 'Lilith: Huh, ketchup?'
   - "Oh, yes\u2026 My mistake\u2026"
-  - "\u2026"
-  - "\u2026"
+  - '...'
+  - '...'
   - "I\u2019m Lilith and sorry I\u2019m not much for conversation but nice to meet
     you."
-  - "\u2026"
-  - "\u2026"
-  - "\u2026"
+  - '...'
+  - '... ...'
+  - '...'
   - (Everyone starts leaving)
-  - 'Bye. '
   - 'Bye. '
 --- !u!224 &7398672944706407427
 RectTransform:
@@ -1112,28 +1111,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8824547390124823574}
   m_CullTransparentMesh: 0
---- !u!114 &8824547390152171648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8824547390152171650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!114 &8824547390152171649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,7 +1138,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8824547390152171654}
   - component: {fileID: 8824547390152171655}
-  - component: {fileID: 8824547390152171648}
   - component: {fileID: 8824547390152171649}
   - component: {fileID: 8824547390152171653}
   m_Layer: 5

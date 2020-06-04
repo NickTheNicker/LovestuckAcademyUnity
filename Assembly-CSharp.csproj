@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\Classes.cs" />
     <Compile Include="Assets\Scripts\CustomScenes\FirstDay.cs" />
     <Compile Include="Assets\Scripts\CustomScenes\FirstDayImage.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\Questions.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\QuestionsImage.cs" />
     <Compile Include="Assets\Scripts\Elevator.cs" />
     <Compile Include="Assets\Scripts\Homeroom.cs" />
     <Compile Include="Assets\Scripts\ImageSystemChoice.cs" />
