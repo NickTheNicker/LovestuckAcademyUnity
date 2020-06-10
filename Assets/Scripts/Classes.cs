@@ -47,7 +47,7 @@ public class Classes : MonoBehaviour
     // Resets "lunchCount" when it is larger than 8.
     public void Reset()
     {
-        if (saveNScene.save.lunchCount > 8)
+        if (saveNScene.save.lunchCount > 9)
         {
             saveNScene.save.lunchCount = 2;
         }
@@ -75,6 +75,7 @@ public class Classes : MonoBehaviour
                 { 6, "The Prodigy" },
                 { 7, "Uniforms" },
                 { 8, "You" },
+                { 9, "Game"},
         };
 
 

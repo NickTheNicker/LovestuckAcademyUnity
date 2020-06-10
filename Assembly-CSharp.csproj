@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AffectionDisplay.cs" />
     <Compile Include="Assets\Scripts\Classes.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\Battle.cs" />
+    <Compile Include="Assets\Scripts\CustomScenes\BattleImage.cs" />
     <Compile Include="Assets\Scripts\CustomScenes\FirstDay.cs" />
     <Compile Include="Assets\Scripts\CustomScenes\FirstDayImage.cs" />
     <Compile Include="Assets\Scripts\CustomScenes\Questions.cs" />
