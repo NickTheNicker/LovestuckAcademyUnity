@@ -14,7 +14,7 @@ public class TextnEvent : MonoBehaviour
 
     // Variables.
     
-    // Page number that corresponds to an element of the "startingText" array.
+    // Page number that corresponds to elements of the arrays.
     public int page = 0;
 
     // 0="startingText" 1="event1Text" 2="event2Text" 3="event3Text" 4="event4Text".

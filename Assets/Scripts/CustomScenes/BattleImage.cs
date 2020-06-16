@@ -8,151 +8,141 @@ public class BattleImage : MonoBehaviour
     // Cached References.
     Battle battle;
 
-    // Background images.
-    Image back1;
-    Image back2;
-    Image back3;
+    // Images.
+    Image back;
+    Image pic0;
+    Image pic1;
+    Image pic2;
+    Image pic3;
+    Image pic4;
+    Image pic5;
+    Image pic6;
+    Image pic7;
+    Image pic8;
 
-    // Character images.
-    Image girl01;
-    Image girl02;
-    Image girl03;
+    // Variables.
+    int page;
 
-    Image girl11;
-    Image girl12;
-    Image girl13;
-
-    Image girl21;
-    Image girl22;
-    Image girl23;
-
-    Image girl31;
-    Image girl32;
-    Image girl33;
-
-    Image girl41;
-    Image girl42;
-    Image girl43;
-
-    // Variables
-    int page = 0;
-
-    // Page numbers for when the "b"ackground image changes when "currentEvent" = 0.
-    [SerializeField] int b1 = 0;
-    [SerializeField] int b2 = -1;
-    [SerializeField] int b3 = -2;
-
-    // Page numbers for when the "g"irl image changes when "currentEvent" = 0.
-    [SerializeField] int g01 = 0;
-    [SerializeField] int g02 = -1;
-    [SerializeField] int g03 = -2;
-
-    // Page numbers for when the "g"irl image changes when "currentEvent" = 1.
-    [SerializeField] int g11 = -1;
-    [SerializeField] int g12 = -2;
-    [SerializeField] int g13 = -3;
-
-    // Page numbers for when the "g"irl image changes when "currentEvent" = 2.
-    [SerializeField] int g21 = -1;
-    [SerializeField] int g22 = -2;
-    [SerializeField] int g23 = -3;
-
-    // Page numbers for when the "g"irl image changes when "currentEvent" = 3.
-    [SerializeField] int g31 = -1;
-    [SerializeField] int g32 = -2;
-    [SerializeField] int g33 = -3;
-
-    // Page numbers for when the "g"irl image changes when "currentEvent" = 4.
-    [SerializeField] int g41 = -1;
-    [SerializeField] int g42 = -2;
-    [SerializeField] int g43 = -3;
-
-    // Hides all images except "back1".
-    public void StartImages()
+    // Displays the image that corresponds to the "page" int from the "Battle" script.
+    public void Images()
     {
-        back1.enabled = false;
-        back2.enabled = false;
-        back3.enabled = false;
-
-        girl01.enabled = false;
-        girl02.enabled = false;
-        girl03.enabled = false;
-
-        girl11.enabled = false;
-        girl12.enabled = false;
-        girl13.enabled = false;
-
-        girl21.enabled = false;
-        girl22.enabled = false;
-        girl23.enabled = false;
-
-        girl31.enabled = false;
-        girl32.enabled = false;
-        girl33.enabled = false;
-
-        girl41.enabled = false;
-        girl42.enabled = false;
-        girl43.enabled = false;
-    }
-
-    // Changes the background image accroding to the "page" int.
-    public void BackChange()
-    {
-        if (page == b1)
+        switch (page)
         {
-            back1.enabled = true;
-        }
-        if (page == b2)
-        {
-            back1.enabled = false;
-            back2.enabled = true;
-        }
-
-        if (page == b3)
-        {
-            back2.enabled = false;
-            back3.enabled = true;
+            case 0:
+                pic0.enabled = true;
+                pic1.enabled = false;
+                pic2.enabled = false;
+                pic3.enabled = false;
+                pic4.enabled = false;
+                pic5.enabled = false;
+                pic6.enabled = false;
+                pic7.enabled = false;
+                pic8.enabled = false;
+                break;
+            case 1:
+                pic0.enabled = false;
+                pic1.enabled = true;
+                pic2.enabled = false;
+                pic3.enabled = false;
+                pic4.enabled = false;
+                pic5.enabled = false;
+                pic6.enabled = false;
+                pic7.enabled = false;
+                pic8.enabled = false;
+                break;
+            case 2:
+                pic0.enabled = false;
+                pic1.enabled = false;
+                pic2.enabled = true;
+                pic3.enabled = false;
+                pic4.enabled = false;
+                pic5.enabled = false;
+                pic6.enabled = false;
+                pic7.enabled = false;
+                pic8.enabled = false;
+                break;
+            case 3:
+                pic0.enabled = false;
+                pic1.enabled = false;
+                pic2.enabled = false;
+                pic3.enabled = true;
+                pic4.enabled = false;
+                pic5.enabled = false;
+                pic6.enabled = false;
+                pic7.enabled = false;
+                pic8.enabled = false;
+                break;
+            case 4:
+                pic0.enabled = false;
+                pic1.enabled = false;
+                pic2.enabled = false;
+                pic3.enabled = false;
+                pic4.enabled = true;
+                pic5.enabled = false;
+                pic6.enabled = false;
+                pic7.enabled = false;
+                pic8.enabled = false;
+                break;
+            case 5:
+                pic0.enabled = false;
+                pic1.enabled = false;
+                pic2.enabled = false;
+                pic3.enabled = false;
+                pic4.enabled = false;
+                pic5.enabled = true;
+                pic6.enabled = false;
+                pic7.enabled = false;
+                pic8.enabled = false;
+                break;
+            case 6:
+                pic0.enabled = false;
+                pic1.enabled = false;
+                pic2.enabled = false;
+                pic3.enabled = false;
+                pic4.enabled = false;
+                pic5.enabled = false;
+                pic6.enabled = true;
+                pic7.enabled = false;
+                pic8.enabled = false;
+                break;
+            case 7:
+                pic0.enabled = false;
+                pic1.enabled = false;
+                pic2.enabled = false;
+                pic3.enabled = false;
+                pic4.enabled = false;
+                pic5.enabled = false;
+                pic6.enabled = false;
+                pic7.enabled = true;
+                pic8.enabled = false;
+                break;
+            case 8:
+                pic0.enabled = false;
+                pic1.enabled = false;
+                pic2.enabled = false;
+                pic3.enabled = false;
+                pic4.enabled = false;
+                pic5.enabled = false;
+                pic6.enabled = false;
+                pic7.enabled = false;
+                pic8.enabled = true;
+                break;
         }
     }
-
-    // Turns off the images "Girl01" "Girl02" "Girl03". 
-    public void StopZeroImages()
-    {
-        girl01.enabled = false;
-        girl02.enabled = false;
-        girl03.enabled = false;
-    }
-
+    
     // Start is called before the first frame update.
     void Start()
     {
-        // Image references.
-        back1 = GameObject.Find("Back1").GetComponent<Image>();
-        back2 = GameObject.Find("Back2").GetComponent<Image>();
-        back3 = GameObject.Find("Back3").GetComponent<Image>();
-
-        girl01 = GameObject.Find("Girl01").GetComponent<Image>();
-        girl02 = GameObject.Find("Girl02").GetComponent<Image>();
-        girl03 = GameObject.Find("Girl03").GetComponent<Image>();
-
-        girl11 = GameObject.Find("Girl11").GetComponent<Image>();
-        girl12 = GameObject.Find("Girl12").GetComponent<Image>();
-        girl13 = GameObject.Find("Girl13").GetComponent<Image>();
-
-        girl21 = GameObject.Find("Girl21").GetComponent<Image>();
-        girl22 = GameObject.Find("Girl22").GetComponent<Image>();
-        girl23 = GameObject.Find("Girl23").GetComponent<Image>();
-
-        girl31 = GameObject.Find("Girl31").GetComponent<Image>();
-        girl32 = GameObject.Find("Girl32").GetComponent<Image>();
-        girl33 = GameObject.Find("Girl33").GetComponent<Image>();
-
-        girl41 = GameObject.Find("Girl41").GetComponent<Image>();
-        girl42 = GameObject.Find("Girl42").GetComponent<Image>();
-        girl43 = GameObject.Find("Girl43").GetComponent<Image>();
-
-        StartImages();
-
+        back = GameObject.Find("Back").GetComponent<Image>();
+        pic0 = GameObject.Find("Pic0").GetComponent<Image>();
+        pic1 = GameObject.Find("Pic1").GetComponent<Image>();
+        pic2 = GameObject.Find("Pic2").GetComponent<Image>();
+        pic3 = GameObject.Find("Pic3").GetComponent<Image>();
+        pic4 = GameObject.Find("Pic4").GetComponent<Image>();
+        pic5 = GameObject.Find("Pic5").GetComponent<Image>();
+        pic6 = GameObject.Find("Pic6").GetComponent<Image>();
+        pic7 = GameObject.Find("Pic7").GetComponent<Image>();
+        pic8 = GameObject.Find("Pic8").GetComponent<Image>();
         battle = GameObject.Find("TextBoxText").GetComponent<Battle>();
     }
 
@@ -161,7 +151,8 @@ public class BattleImage : MonoBehaviour
     {
         // Copies the int values from the "TextnEvent" script.
         page = battle.page;
-        BackChange();
+
+        Images();
     }
 }
 

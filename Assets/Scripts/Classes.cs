@@ -27,7 +27,7 @@ public class Classes : MonoBehaviour
             iText.text = text[page].ToString();
     }
 
-    // Sets "page" as a random interger number between 1 and the page length(inclusive) when page = 0.
+    // Sets "page" as a random interger number between 1 and the page length(inclusive) when conditions are met.
     public void Next()
     {
         if (Input.GetKeyDown(KeyCode.Space))
