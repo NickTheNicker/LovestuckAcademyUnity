@@ -132,15 +132,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Shiro/Club3rd.unity
     guid: b5720372e7d7ac3419e96574aa3ed7b5
   - enabled: 1
-    path: Assets/Scenes/Lunch/Game/Lose.unity
+    path: Assets/Scenes/GameNBattle/Lose.unity
     guid: 238ad26e8f2ee2a43bf012e37c7366e0
   - enabled: 1
-    path: Assets/Scenes/Lunch/Game/Win.unity
+    path: Assets/Scenes/GameNBattle/Win.unity
     guid: ac72575b66525a249bc41f18b9166909
   - enabled: 1
-    path: Assets/Scenes/Lunch/Game/Game.unity
+    path: Assets/Scenes/GameNBattle/Game.unity
     guid: a7f5d247516862742a94952fe5006a49
   - enabled: 1
-    path: Assets/Scenes/Lunch/Game/Battle.unity
+    path: Assets/Scenes/GameNBattle/Battle.unity
     guid: 94abb6d5186af164fbe9d1030b4965c6
   m_configObjects: {}

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Lunch/Game/Battle.unity
+- path: Assets/Scenes/GameNBattle/Battle.unity
   isLoaded: 1
   isActive: 1

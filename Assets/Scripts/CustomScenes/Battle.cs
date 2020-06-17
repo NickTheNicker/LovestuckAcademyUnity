@@ -217,10 +217,12 @@ public void Choice()
         if (eHealth <= 0)
         {
             saveNScene.loadName = "Win";
+            saveNScene.LoadScene();
         }
         if (pHealth <= 0)
         {
             saveNScene.loadName = "Lose";
+            saveNScene.LoadScene();
         }
     }
 
