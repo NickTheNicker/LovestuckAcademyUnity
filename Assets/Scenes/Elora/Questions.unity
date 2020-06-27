@@ -934,7 +934,8 @@ MonoBehaviour:
   - "Rumi: A person is coming.\r\n\n"
   - "(The door opens and blinding light hits your eyes)\r\n"
   - "Librarian: What are you two doing? \r\n"
-  - "(...) UWU\r\n"
+  - "(You come up with a brilliant story that perfectly excuses you and Elora\u2019s
+    presence in the storeroom.) UWU\r\n"
   - "Librarian: Hmm, well you don\u2019t seem to be lying and that makes a reasonable
     amount of sense. \r\n"
   - "I need to get something and the library is about to close.\r\n"
@@ -1243,14 +1244,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.78039217, g: 0.69411767, b: 0.54509807, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: fd56bf1f6c443fb44a9f36c7eff3a919, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1398,7 +1399,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9ed0c7a8d32c44a4faa9f4dd6a9b5638, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1538,8 +1539,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   b1: 0
-  b2: -1
-  b3: -2
+  b2: 3
+  b3: 7
   g01: 0
   g02: -1
   g03: -2

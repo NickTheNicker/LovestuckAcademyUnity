@@ -93,23 +93,23 @@ public void Choice()
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
-                    pHealth -= 1;
+                    pHealth -= 3;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
-                    pHealth -= 2;
+                    pHealth -= 5;
                 }
                 break;
             case 2:
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
-                    pHealth -= 2;
-                    eHealth -= 2;
+                    pHealth -= 3;
+                    eHealth -= 3;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
-                    pHealth -= 1;
-                    eHealth -= 2;
+                    pHealth -= 2;
+                    eHealth -= 3;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
@@ -119,7 +119,8 @@ public void Choice()
             case 3:
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
-
+                    pHealth -= 2;
+                    eHealth -= 2;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
@@ -127,7 +128,7 @@ public void Choice()
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
-                    pHealth -= 1;
+                    pHealth -= 5;
                 }
                 break;
             case 4:
@@ -137,11 +138,11 @@ public void Choice()
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
-                    eHealth -= 4;
+                    eHealth -= 3;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
-                    pHealth += 4;
+                    pHealth += 2;
                 }
                 break;
             case 5:
@@ -180,7 +181,7 @@ public void Choice()
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2))
                 {
-                    eHealth -= 2;
+                    eHealth -= 1;
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {

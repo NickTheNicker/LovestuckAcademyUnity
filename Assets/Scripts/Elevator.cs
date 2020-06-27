@@ -81,6 +81,10 @@ public class Elevator : MonoBehaviour
             {
                 saveNScene.loadName = "Club2nd";
             }
+            else if ((!saveNScene.save.club3) && (saveNScene.save.sAffection >= 25))
+            {
+                saveNScene.loadName = "Club3rd";
+            }
             else saveNScene.loadName = "ClubFill";
         }
     }
@@ -98,6 +102,10 @@ public class Elevator : MonoBehaviour
             {
                 saveNScene.loadName = "Roof2nd";
             }
+            else if ((!saveNScene.save.roof3) && (saveNScene.save.lAffection >= 25))
+            {
+                saveNScene.loadName = "Roof3rd";
+            }
             else saveNScene.loadName = "RoofFill";
         }
     }
@@ -114,6 +122,10 @@ public class Elevator : MonoBehaviour
             else if ((!saveNScene.save.library2) && (saveNScene.save.eAffection >= 16))
             {
                 saveNScene.loadName = "Library2nd";
+            }
+            else if ((!saveNScene.save.library3) && (saveNScene.save.eAffection >= 25))
+            {
+                saveNScene.loadName = "Library3rd";
             }
             else saveNScene.loadName = "LibraryFill";
         }

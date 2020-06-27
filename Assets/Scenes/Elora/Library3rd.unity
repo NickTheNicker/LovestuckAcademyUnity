@@ -1339,15 +1339,15 @@ MonoBehaviour:
     to break through the weaker floors of safehouses.\r"
   - "I frantically searched for a new partner and Elora was the first compatible human
     I found.\r\n"
-  - "With a crisis at hand, hundreds of lives at stake...\r\n"
-  - "Elora: My dreams came...\r\n"
+  - "With a crisis at hand, hundreds of lives at stake\u2026\n"
+  - "Elora: My dreams came\u2026\r\n"
   - "Rumi: An offer.\r\n"
   - "Elora: My blood.\r\n"
   - "Rumi: A contract.\r\n"
   - "Elora: My life now\u2026\r\n"
   - "Rumi: \u2026until the very end.\r\n"
   - "Elora: I became a magical girl.\r\n"
-  - '...'
+  - "\u2026"
   - "Even now I still fight beasts on a weekly basis.\r\n"
   - "\u2026\r"
 --- !u!224 &6832642216238205413
